@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ShieldCheck, Camera, Truck } from 'lucide-react';
+import { ShieldCheck, Camera, Truck, Search, Grid2x2} from 'lucide-react';
 import './Home.css'; // Importar el archivo CSS
+import GoogleMapEmbed from '../components/mapa';
+import Slider from '../components/Slider';
 
 const SecurePro = () => {
   const statsRef = useRef(null);
@@ -127,28 +129,28 @@ const SecurePro = () => {
                 <ShieldCheck size={40} />
               </div>
               <h3>Seguridad Física</h3>
+              <p><a>Detalles</a></p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+               <Search size={40}/>
+              </div>
+              <h3>Investigación de casos</h3>
               <p>Detalles</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
                 <Camera size={40} />
               </div>
-              <h3>Investigación</h3>
-              <p>Detalles</p>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">
-                <Truck size={40} />
-              </div>
               <h3>Seguridad Electrónica</h3>
               <p>Detalles</p>
             </div>
              <div className="service-card">
               <div className="service-icon">
-                <Truck size={40} />
+                <Grid2x2 />
               </div>
               <h3>Servicios Complementarios</h3>
-              <p>.</p>
+              <p>Detalles</p>
             </div>
           </div>
         </div>
@@ -182,7 +184,9 @@ const SecurePro = () => {
               </div>
             </div>
             <div className="about-image">
-              <div className="about-placeholder"></div>
+              <div className="about-placeholder">
+                <Slider />
+              </div>
             </div>
           </div>
         </div>
@@ -252,7 +256,7 @@ const SecurePro = () => {
               </div>
             </div>
             <div className="map-placeholder">
-              {/* Aquí se integraría el mapa real */}
+              <GoogleMapEmbed />
             </div>
           </div>
         </div>

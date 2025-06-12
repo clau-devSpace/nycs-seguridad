@@ -172,8 +172,8 @@ body {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .service-card {
@@ -386,6 +386,30 @@ body {
     overflow: hidden;
 }
 
+.swiper {
+  max-width: 450px;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 .about-placeholder::after {
     content: 'Imagen de la empresa';
     color: #ff6b35;
@@ -463,13 +487,10 @@ body {
 
 .map-placeholder {
     width: 100%;
-    height: 400px;
-    background: linear-gradient(135deg, #e9ecef, #f8f9fa);
-    border-radius: 15px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px dashed #dee2e6;
     position: relative;
     overflow: hidden;
 }
@@ -479,15 +500,6 @@ body {
     font-size: 8rem;
     opacity: 0.3;
     position: absolute;
-}
-
-.map-placeholder::after {
-    content: 'Mapa interactivo';
-    color: #666;
-    font-size: 1.2rem;
-    font-weight: 500;
-    z-index: 1;
-    position: relative;
 }
 
 /* Footer */
