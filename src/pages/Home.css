@@ -363,7 +363,7 @@ body {
     text-align: center;
 }
 
-.about-image::before {
+/*.about-image::before {
     content: '🏢';
     font-size: 12rem;
     opacity: 0.1;
@@ -371,24 +371,22 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+}*/
 
 .about-placeholder {
-    width: 100%;
+    max-width: 450px;
     height: 400px;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 140, 66, 0.1));
-    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px dashed rgba(255, 107, 53, 0.3);
     position: relative;
     overflow: hidden;
 }
 
 .swiper {
   max-width: 450px;
-  height: auto;
+  height: 400px;
+  border-radius: 8px;
 }
 
 .swiper-slide {
@@ -410,14 +408,14 @@ body {
 }
 
 
-.about-placeholder::after {
+/*.about-placeholder::after {
     content: 'Imagen de la empresa';
     color: #ff6b35;
     font-size: 1.2rem;
     font-weight: 500;
     z-index: 1;
     position: relative;
-}
+}*/
 
 /* Map Section */
 .map-section {

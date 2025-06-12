@@ -3,21 +3,11 @@ import { ShieldCheck, Camera, Truck, Search, Grid2x2} from 'lucide-react';
 import './Home.css'; // Importar el archivo CSS
 import GoogleMapEmbed from '../components/mapa';
 import Slider from '../components/Slider';
+import Logo from '../assets/images/Logo-definitivo-nick.png';
 
 const SecurePro = () => {
   const statsRef = useRef(null);
   const [statsAnimated, setStatsAnimated] = useState(false);
-  const [navBackground, setNavBackground] = useState(false);
-
-  // Effect para el scroll del navbar
-  useEffect(() => {
-    const handleScroll = () => {
-      setNavBackground(window.scrollY > 100);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Effect para animar las estadísticas
   useEffect(() => {
@@ -84,26 +74,6 @@ const SecurePro = () => {
 
   return (
     <div>
-      {/* Navbar */}
-      <nav
-        className="navbar"
-        style={{
-          background: navBackground
-            ? 'linear-gradient(135deg, rgba(74, 74, 74, 0.95), rgba(90, 90, 90, 0.95))'
-            : 'linear-gradient(135deg, #4a4a4a, #5a5a5a)'
-        }}
-      >
-        <div className="nav-container">
-          <a href="#" className="logo">SecurePro</a>
-          <ul className="nav-menu">
-            <li><a href="#inicio" onClick={(e) => handleSmoothScroll(e, '#inicio')}>Inicio</a></li>
-            <li><a href="#servicios" onClick={(e) => handleSmoothScroll(e, '#servicios')}>Servicios</a></li>
-            <li><a href="#nosotros" onClick={(e) => handleSmoothScroll(e, '#nosotros')}>Nosotros</a></li>
-            <li><a href="#contacto" onClick={(e) => handleSmoothScroll(e, '#contacto')}>Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="hero" id="inicio">
         <div className="hero-content">
