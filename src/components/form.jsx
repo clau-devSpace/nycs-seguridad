@@ -1,0 +1,65 @@
+import React from 'react';
+import '../pages/Contacto.css';
+
+export default function Form() {
+  return (
+    <div className="contact-form">
+      <h2>Envianos tu Consulta</h2>
+      <form>
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="apellido">Apellido *</label>
+            <input type="text" id="apellido" name="apellido" required />
+          </div>
+        </div>
+
+        <div className="form-row">
+          <div className="form-group">
+            <label htmlFor="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono" required />
+          </div>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="servicio">Servicio de Interés</label>
+          <select id="servicio" name="servicio">
+            <option value="">Seleccione un servicio</option>
+            <option value="seguridad-fisica">Seguridad Física</option>
+            <option value="monitoreo-alarmas">Monitoreo de Alarmas</option>
+            <option value="seguridad-electronica">Seguridad Electrónica</option>
+            <option value="seguridad-corporativa">Seguridad Corporativa</option>
+            <option value="eventos">Eventos y Espectáculos</option>
+            <option value="otros">Otros Servicios</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="mensaje">Mensaje *</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Contanos sobre tu consulta o requerimiento específico..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" className="submit-btn">
+          Enviar Consulta
+        </button>
+      </form>
+    </div>
+  );
+}
