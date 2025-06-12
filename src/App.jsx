@@ -1,13 +1,13 @@
-import Home from './pages/Home';
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Layout from './Layout/Layout.jsx';
+import Home from './pages/Home.jsx';
 
-function App() {
-
+ export default function App() {
   return (
-    <>
-     <Home />
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
+  );
 }
-
-export default App
