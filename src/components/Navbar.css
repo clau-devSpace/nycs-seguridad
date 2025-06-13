@@ -45,11 +45,59 @@
     padding: 0.5rem 1rem;
     border-radius: 5px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-menu a:hover {
     color: #ff6b35;
     background: rgba(255, 107, 53, 0.1);
+}
+
+/* Dropdown Styles */
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(135deg, rgba(74, 74, 74, 0.98), rgba(90, 90, 90, 0.98));
+    min-width: 200px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(255, 107, 53, 0.15);
+    color: #ff6b35;
+    transform: translateX(5px);
 }
 
 /* Hamburger Menu Button */
@@ -141,6 +189,36 @@
         background: rgba(255, 107, 53, 0.2);
         transform: translateX(5px);
     }
+
+    /* Mobile Dropdown Styles */
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: rgba(255, 107, 53, 0.1);
+        margin: 0.5rem 2rem;
+        border-radius: 8px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-item.dropdown-open .dropdown-menu {
+        max-height: 300px;
+    }
+
+    .dropdown-menu a {
+        padding: 0.75rem 1rem;
+        margin: 0;
+        font-size: 1rem;
+        background: transparent;
+    }
+
+    .dropdown-menu a:hover {
+        background: rgba(255, 107, 53, 0.2);
+        transform: none;
+    }
 }
 
 /* Extra small devices */
@@ -166,5 +244,9 @@
     .nav-menu a {
         margin: 0 1rem;
         font-size: 1rem;
+    }
+
+    .dropdown-menu {
+        margin: 0.5rem 1rem;
     }
 }

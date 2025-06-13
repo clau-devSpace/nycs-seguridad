@@ -193,42 +193,9 @@ const SecurePro = () => {
             <h2>Nuestra Ubicación</h2>
             <p>Encuéntranos y contáctanos para una consulta personalizada</p>
           </div>
-          <div className="map-content">
-            <div className="contact-info">
-              <h3>Información de Contacto</h3>
-              <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <div className="contact-details">
-                  <h4>Dirección</h4>
-                  <p>Av. Principal 1234<br />Buenos Aires, Argentina</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📞</span>
-                <div className="contact-details">
-                  <h4>Teléfono</h4>
-                  <p>+54 11 1234-5678</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">✉️</span>
-                <div className="contact-details">
-                  <h4>Email</h4>
-                  <p>info@securepro.com.ar</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">🕒</span>
-                <div className="contact-details">
-                  <h4>Horarios</h4>
-                  <p>Atención 24/7<br />Oficinas: Lun-Vie 8:00-18:00</p>
-                </div>
-              </div>
-            </div>
             <div className="map-placeholder">
               <GoogleMapEmbed />
             </div>
-          </div>
         </div>
       </section>
 

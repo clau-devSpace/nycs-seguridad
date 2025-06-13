@@ -1,0 +1,156 @@
+export default function SeguridadFisica(){
+    return(
+        <>
+        <section className="security-hero" id="inicio">
+        <div className="security-hero-content">
+            <div className="security-breadcrumb">
+                <a href="#">Inicio</a>
+                <span>/</span>
+                <a href="#">Servicios</a>
+                <span>/</span>
+                <span>Seguridad Física</span>
+            </div>
+            <h1>Seguridad Física</h1>
+            <p className="security-hero-subtitle">Protección Integral para Personas y Propiedades</p>
+            <p>Ofrecemos servicios especializados de seguridad física con personal altamente capacitado, tecnología de vanguardia y protocolos de seguridad adaptados a cada necesidad específica.</p>
+        </div>
+    </section>
+
+    {/* Service Overview Section */}
+    <section className="security-service-overview">
+        <div className="security-container">
+            <div className="security-overview-content">
+                <div className="security-overview-text">
+                    <h2>Protección Integral</h2>
+                    <p>Nuestro servicio de seguridad física está diseñado para brindar la máxima protección a personas, propiedades y activos. Contamos con un equipo de profesionales altamente entrenados y certificados que operan bajo los más estrictos protocolos de seguridad.</p>
+                    <p>Utilizamos tecnología de última generación combinada con técnicas tradicionales de vigilancia para garantizar una cobertura completa y efectiva en todos los entornos donde prestamos nuestros servicios.</p>
+                    <div className="security-overview-features">
+                        <div className="security-feature-item">
+                            <span className="security-feature-icon">🎯</span>
+                            <span className="security-feature-text">Vigilancia Especializada</span>
+                        </div>
+                        <div className="security-feature-item">
+                            <span className="security-feature-icon">⚡</span>
+                            <span className="security-feature-text">Respuesta Inmediata</span>
+                        </div>
+                        <div className="security-feature-item">
+                            <span className="security-feature-icon">📋</span>
+                            <span className="security-feature-text">Protocolos Certificados</span>
+                        </div>
+                        <div className="security-feature-item">
+                            <span className="security-feature-icon">🔒</span>
+                            <span className="security-feature-text">Control de Acceso</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="security-overview-image">
+                    <div className="security-image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* Services Section - MODIFICADA */}
+    <section className="security-services-section" id="servicios">
+        <div className="security-container">
+            <div className="security-section-title">
+                <h2>Nuestras Especialidades</h2>
+                <p>Servicios de seguridad física adaptados a diferentes sectores y necesidades</p>
+            </div>
+            <div className="security-services-grid">
+                <div className="security-service-card">
+                    <div className="security-service-image">
+                        {/* Aquí puedes agregar: <img src="ruta-imagen-corporativa.jpg" alt="Seguridad Corporativa" /> */}
+                    </div>
+                    <h3>Seguridad Corporativa</h3>
+                    <p>Protección integral para oficinas, edificios corporativos y centros de negocios con personal especializado en seguridad empresarial.</p>
+                    <ul className="security-service-list">
+                        <li>Control de acceso de empleados y visitantes</li>
+                        <li>Vigilancia de instalaciones</li>
+                        <li>Protección de ejecutivos</li>
+                        <li>Seguridad en eventos corporativos</li>
+                    </ul>
+                </div>
+                <div className="security-service-card">
+                    <div className="security-service-image">
+                        {/* Aquí puedes agregar: <img src="ruta-imagen-barrios.jpg" alt="Barrios Cerrados" /> */}
+                    </div>
+                    <h3>Barrios Cerrados</h3>
+                    <p>Servicios especializados para urbanizaciones privadas, countries y barrios cerrados con sistemas de seguridad integrados.</p>
+                    <ul className="security-service-list">
+                        <li>Vigilancia perimetral 24/7</li>
+                        <li>Control de ingresos vehiculares y peatonales</li>
+                        <li>Patrullajes internos</li>
+                        <li>Monitoreo de alarmas comunitarias</li>
+                    </ul>
+                </div>
+                <div className="security-service-card">
+                    <div className="security-service-image">
+                        {/* Aquí puedes agregar: <img src="ruta-imagen-industria.jpg" alt="Industria y Comercios" /> */}
+                    </div>
+                    <h3>Industria y Comercios</h3>
+                    <p>Soluciones de seguridad para plantas industriales, depósitos, centros comerciales y establecimientos comerciales.</p>
+                    <ul className="security-service-list">
+                        <li>Vigilancia industrial especializada</li>
+                        <li>Protección de mercadería y activos</li>
+                        <li>Control de personal y contratistas</li>
+                        <li>Prevención de pérdidas</li>
+                    </ul>
+                </div>
+                <div className="security-service-card">
+                    <div className="security-service-image">
+                        {/* Aquí puedes agregar: <img src="ruta-imagen-eventos.jpg" alt="Eventos y Espectáculos" /> */}
+                    </div>
+                    <h3>Eventos y Espectáculos</h3>
+                    <p>Seguridad especializada para eventos masivos, conciertos, conferencias y espectáculos públicos y privados.</p>
+                    <ul className="security-service-list">
+                        <li>Planificación de seguridad preventiva</li>
+                        <li>Control de multitudes</li>
+                        <li>Coordinación con fuerzas públicas</li>
+                        <li>Evacuación y emergencias</li>
+                    </ul>
+                </div>
+                <div className="security-service-card">
+                    <div className="security-service-image">
+                        {/* Aquí puedes agregar: <img src="ruta-imagen-residencial.jpg" alt="Seguridad Residencial" /> */}
+                    </div>
+                    <h3>Seguridad Residencial</h3>
+                    <p>Protección personalizada para residencias privadas, casas de campo y propiedades de alto valor.</p>
+                    <ul className="security-service-list">
+                        <li>Vigilancia residencial discreta</li>
+                        <li>Protección familiar</li>
+                        <li>Seguridad en ausencias</li>
+                        <li>Escoltas personales</li>
+                    </ul>
+                </div>
+                <div className="security-service-card">
+                    <div className="security-service-image">
+                        {/* Aquí puedes agregar: <img src="ruta-imagen-logistica.jpg" alt="Transporte y Logística" /> */}
+                    </div>
+                    <h3>Transporte y Logística</h3>
+                    <p>Seguridad especializada para el sector logístico, puertos, aeropuertos y centros de distribución.</p>
+                    <ul className="security-service-list">
+                        <li>Vigilancia de centros logísticos</li>
+                        <li>Seguridad en muelles y andenes</li>
+                        <li>Control de cargas y descargas</li>
+                        <li>Protección anti-robo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* Contact CTA Section */}
+    <section className="security-contact-cta">
+        <div className="security-container">
+            <h2>¿Necesitas una Cotización?</h2>
+            <p>Contáctanos para recibir una propuesta personalizada según tus necesidades de seguridad</p>
+            <div className="security-cta-buttons">
+                <a href="#" className="security-cta-button">Solicitar Cotización</a>
+                <a href="#" className="security-cta-button secondary">Contactar Ahora</a>
+            </div>
+        </div>
+    </section>
+        </>
+    );
+}

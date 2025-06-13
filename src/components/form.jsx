@@ -1,5 +1,5 @@
 import React from 'react';
-import '../pages/Contacto.css';
+import '../components/form.css';
 
 export default function Form() {
   return (

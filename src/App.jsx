@@ -8,7 +8,7 @@ import Contacto from './pages/Contacto.jsx';
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route index element={<Contacto />} />
+        <Route path="contacto"  element={<Contacto />} />
       </Route>
     </Routes>
   );
