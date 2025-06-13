@@ -1,71 +1,53 @@
 import React from "react";
 import './SeguridadFisica.css';
+import ImagenCamara from "../../assets/images/foto-header2.jpg";
+import Alarma from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg";
+import Control from "../../assets/images/Captura de pantalla 2025-06-13 083004.png";
+import Header from "../../components/Header";
+import FotoHeader1 from "../../assets/images/fingerprint-4703841_1920.jpg";
+import FotoHeader2 from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg"
 
-export default function SeguridadFisica(){
+
+export default function SeguridadElectronica(){
     return(
         <>
+        <Header 
+                title="Seguridad Electrónica"
+                subtitle="Estamos aquí para ayudarte"
+                description="Equipos de seguridad de alta tecnología con monitoreo remoto."
+                backgroundImage1={FotoHeader1}
+                backgroundImage2={FotoHeader2}
+              />
     {/* Service Overview Section */}
-    <section className="security-service-overview">
-        <div className="security-container">
-            <div className="security-overview-content">
-                <div className="security-overview-text">
-                    <h2>Protección Integral</h2>
-                    <p>Nuestro servicio de seguridad física está diseñado para brindar la máxima protección a personas, propiedades y activos. Contamos con un equipo de profesionales altamente entrenados y certificados que operan bajo los más estrictos protocolos de seguridad.</p>
-                    <p>Utilizamos tecnología de última generación combinada con técnicas tradicionales de vigilancia para garantizar una cobertura completa y efectiva en todos los entornos donde prestamos nuestros servicios.</p>
-                </div>
-               {/* <div className="security-overview-image">
-                    <div className="security-image-placeholder"></div>
-                </div>*/} 
-            </div>
-        </div>
-    </section>
 
     {/* Services Section - MODIFICADA */}
     <section className="security-services-section" id="servicios">
         <div className="security-container">
             <div className="security-section-title">
                 <h2>Nuestras Especialidades</h2>
-                <p>Servicios de seguridad física adaptados a diferentes sectores y necesidades</p>
+                <p>Servicios de Seguridad Electrónica adaptados a diferentes sectores y necesidades</p>
             </div>
             <div className="security-services-grid">
                 <div className="security-service-card">
                     <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-corporativa.jpg" alt="Seguridad Corporativa" /> */}
+                      <img src={Alarma} alt="alarma" />
                     </div>
-                    <h3>Seguridad Corporativa</h3>
-                    <p>Protección integral para oficinas, edificios corporativos y centros de negocios con personal especializado en seguridad empresarial.</p>
-                    <ul className="security-service-list">
-                        <li>Control de acceso de empleados y visitantes</li>
-                        <li>Vigilancia de instalaciones</li>
-                        <li>Protección de ejecutivos</li>
-                        <li>Seguridad en eventos corporativos</li>
-                    </ul>
+                    <h3>Sistema de alarmas</h3>
+                    <p>La función de un sistema de alarma es advertir el allanamiento en el inmueble, para poder garantizar la seguridad de personas y bienes, en general consiste en un sistema electrónico, el cual es activado mediante una clave y se disparan en el momento en que los sensores detectan algún movimiento fuera de lo común</p>
                 </div>
                 <div className="security-service-card">
                     <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-barrios.jpg" alt="Barrios Cerrados" /> */}
+                        <img src={ImagenCamara} alt="camara de seguridad" />
                     </div>
-                    <h3>Barrios Cerrados</h3>
-                    <p>Servicios especializados para urbanizaciones privadas, countries y barrios cerrados con sistemas de seguridad integrados.</p>
-                    <ul className="security-service-list">
-                        <li>Vigilancia perimetral 24/7</li>
-                        <li>Control de ingresos vehiculares y peatonales</li>
-                        <li>Patrullajes internos</li>
-                        <li>Monitoreo de alarmas comunitarias</li>
-                    </ul>
+                    <h3>Video Camaras</h3>
+                    <p>Las cámaras de seguridad instaladas pueden ser IP y CCTV, mediante las mismas se puede controlar su hogar y empresa desde cualquier lugar del mundo, las 24 hs del día, a través de internet mediante una PC, o con su dispositivo móvil iPhone, Android, Windows mobile, etc.</p>
                 </div>
                 <div className="security-service-card">
                     <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-industria.jpg" alt="Industria y Comercios" /> */}
+                         <img src={Control} alt="control de accesos" />
                     </div>
-                    <h3>Industria y Comercios</h3>
-                    <p>Soluciones de seguridad para plantas industriales, depósitos, centros comerciales y establecimientos comerciales.</p>
-                    <ul className="security-service-list">
-                        <li>Vigilancia industrial especializada</li>
-                        <li>Protección de mercadería y activos</li>
-                        <li>Control de personal y contratistas</li>
-                        <li>Prevención de pérdidas</li>
-                    </ul>
+                    <h3>Control de Accesos</h3>
+                    <p>Ofrecemos variados sistemas de control de accesos, tarjetas, huellas dactilares, teclados, molinetes, etc, en conjunto con software de última generación que dan soporte y registro escrito sobre los movimientos del lugar.</p>
                 </div>
             </div>
         </div>

@@ -11,14 +11,16 @@
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     padding: 0 2rem;
     width: 100%;
 }
 
-.footer h3 {
-    color: #ff6b35;
+ .logo-footer {
     margin-bottom: 1rem;
-    word-wrap: break-word;
+    width: 170px;
+    height: auto;
 }
 
 .footer p {

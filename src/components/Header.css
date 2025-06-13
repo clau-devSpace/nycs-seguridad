@@ -1,8 +1,11 @@
+/* Header.css - Versión actualizada */
+
 .page-header-section {
     padding: 90px 0 60px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    min-height: 400px; /* Asegurar altura mínima */
 }
 
 .page-header-section::before {
@@ -14,15 +17,84 @@
     bottom: 0;
     background: radial-gradient(circle at 30% 50%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
                 radial-gradient(circle at 70% 30%, rgba(255, 107, 53, 0.03) 0%, transparent 50%);
-    z-index: -1;
+    z-index: 1;
 }
 
 .page-header-content {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
+    z-index: 2; /* Asegurar que el contenido esté por encima del background */
 }
 
+/* Solución para dos imágenes como elementos separados */
+.page-header-section.with-double-bg {
+    position: relative;
+}
+
+.header-bg-left,
+.header-bg-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.header-bg-left {
+    left: 0;
+}
+
+.header-bg-right {
+    right: 0;
+}
+
+.header-bg-left::after,
+.header-bg-right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Overlay para mejorar legibilidad */
+}
+
+/* Estilos para texto sobre imagen */
+.page-header-section.with-double-bg .page-header-content {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page-header-section.with-double-bg .page-breadcrumb-nav a {
+    color: white;
+}
+
+.page-header-section.with-double-bg .page-breadcrumb-nav span {
+    color: rgba(255,255,255,0.8);
+}
+
+.page-header-section.with-double-bg h1 {
+    color: white;
+}
+
+.page-header-section.with-double-bg .page-header-subtitle {
+    color: #ff6b35;
+    background: rgba(255,255,255,0.1);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.page-header-section.with-double-bg p {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Estilos originales para cuando no hay imagen */
 .page-breadcrumb-nav {
     margin-bottom: 1rem;
 }
@@ -60,4 +132,27 @@
     font-size: 1.1rem;
     color: #666;
     line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-bg-left,
+    .header-bg-right {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .header-bg-left {
+        top: 0;
+        bottom: 50%;
+    }
+    
+    .header-bg-right {
+        top: 50%;
+        bottom: 0;
+    }
+    
+    .page-header-section h1 {
+        font-size: 2.2rem;
+    }
 }

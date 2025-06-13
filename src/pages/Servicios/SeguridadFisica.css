@@ -137,32 +137,19 @@
         }
 
         .security-image-placeholder {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 140, 66, 0.1));
-            border-radius: 15px;
+            max-width: 550px;
+            height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px dashed rgba(255, 107, 53, 0.3);
             position: relative;
             overflow: hidden;
         }
-
-        .security-image-placeholder::before {
-            content: '👮‍♂️';
-            font-size: 8rem;
-            opacity: 0.3;
-            position: absolute;
-        }
-
-        .security-image-placeholder::after {
-            content: 'Equipo de Seguridad';
-            color: #ff6b35;
-            font-size: 1.2rem;
-            font-weight: 500;
-            z-index: 1;
-            position: relative;
+        
+        .imagen-personal{
+          width: 100%;
+          object-fit: cover;
+          border-radius: 8px;
         }
 
         /* Services Section - MODIFICADA */
@@ -257,15 +244,13 @@
 
         /* NUEVA: Contenedor de imagen en lugar de icono */
         .security-service-image {
-            width: 100%;
+            max-width: 250px;
             height: 200px;
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 140, 66, 0.1));
             border-radius: 10px;
             margin-bottom: 1.5rem;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             z-index: 1;
-            border: 2px solid rgba(255, 107, 53, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -276,14 +261,9 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .security-service-image::before {
-            content: '📷';
-            font-size: 3rem;
-            opacity: 0.3;
-            color: #ff6b35;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
         }
 
         .security-service-card h3 {

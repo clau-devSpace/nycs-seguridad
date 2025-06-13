@@ -2,22 +2,20 @@ import React from 'react';
 import './Contacto.css';
 import { MapPin, PhoneCall, Mail, Clock} from 'lucide-react';
 import Form from'../components/form.jsx';
+import Header from '../components/Header.jsx';
+import HeaderImage1 from '../assets/images/foto-header1.jpg';
+import HeaderImage2 from '../assets/images/foto-header2.jpg';
 
 export default function Contacto() {
   return (
     <>
-      <section className="contact-hero-section">
-        <div className="contact-hero-content">
-          <div className="contact-breadcrumb-nav">
-            <a href="#">Inicio</a>
-            <span>/</span>
-            <span>Contacto</span>
-          </div>
-          <h1>Contacto</h1>
-          <p className="contact-hero-subtitle">Estamos Aquí para Ayudarte</p>
-          <p>Ponete en contacto con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas.</p>
-        </div>
-      </section>
+      <Header 
+        title="Contacto"
+        subtitle="Estamos aquí para ayudarte"
+        description="Ponete en contacto con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas"
+        backgroundImage1={HeaderImage1}
+        backgroundImage2={HeaderImage2}
+      />
 
       {/* Contact Section */}
       <section className="contact-info-section">
@@ -99,17 +97,6 @@ export default function Contacto() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="contact-footer">
-        <div className="contact-footer-content">
-          <h3>SecurePro</h3>
-          <p>Tu seguridad es nuestra prioridad. Servicios profesionales de seguridad integral.</p>
-        </div>
-        <div className="contact-footer-bottom">
-          <p>&copy; 2024 SecurePro. Todos los derechos reservados.</p>
-        </div>
-      </footer>
     </>
   );
 };

@@ -1,9 +1,24 @@
 import React from "react";
 import './SeguridadFisica.css';
+import Header from "../../components/Header";
+import ImagenHeader3 from "../../assets/images/foto-header3.JPG";
+import ImagenHeader4 from "../../assets/images/imagen-header-5.JPG";
+import ImagenPersonal from "../../assets/images/image-slider-3.JPG";
+import ImagenCard1 from "../../assets/images/seguridad-fisica-1.jpeg";
+import ImagenCard2 from "../../assets/images/image-slider-6.jpeg";
+
+
 
 export default function SeguridadFisica(){
     return(
         <>
+          <Header 
+                title="Seguridad Fisica"
+                subtitle="Estamos aquí para ayudarte"
+                description="Protección confiable con personal altamente capacitado y tecnología avanzada. Custodia y vigilancia profesional las 24 horas del día, los 365 días del año"
+                backgroundImage1={ImagenHeader3}
+                backgroundImage2={ImagenHeader4}
+              />
     {/* Service Overview Section */}
     <section className="security-service-overview">
         <div className="security-container">
@@ -32,7 +47,9 @@ export default function SeguridadFisica(){
                     </div>
                 </div>
                 <div className="security-overview-image">
-                    <div className="security-image-placeholder"></div>
+                    <div className="security-image-placeholder">
+                        <img className="imagen-personal"src={ImagenPersonal} alt="foto personal NYC" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,7 +65,7 @@ export default function SeguridadFisica(){
             <div className="security-services-grid">
                 <div className="security-service-card">
                     <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-corporativa.jpg" alt="Seguridad Corporativa" /> */}
+                         <img src={ImagenCard1} alt="Seguridad Barrios Cerrados" />
                     </div>
                     <h3>Seguridad Corporativa</h3>
                     <p>Protección integral para oficinas, edificios corporativos y centros de negocios con personal especializado en seguridad empresarial.</p>
@@ -61,7 +78,7 @@ export default function SeguridadFisica(){
                 </div>
                 <div className="security-service-card">
                     <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-barrios.jpg" alt="Barrios Cerrados" /> */}
+                        <img src={ImagenCard2} alt="Seguridad Barrios Cerrados" />
                     </div>
                     <h3>Barrios Cerrados</h3>
                     <p>Servicios especializados para urbanizaciones privadas, countries y barrios cerrados con sistemas de seguridad integrados.</p>
@@ -74,7 +91,7 @@ export default function SeguridadFisica(){
                 </div>
                 <div className="security-service-card">
                     <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-industria.jpg" alt="Industria y Comercios" /> */}
+                        <img src={ImagenHeader3} alt="Seguridad Industrial" />
                     </div>
                     <h3>Industria y Comercios</h3>
                     <p>Soluciones de seguridad para plantas industriales, depósitos, centros comerciales y establecimientos comerciales.</p>
