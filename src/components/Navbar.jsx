@@ -57,7 +57,7 @@ const Navbar = () => {
         
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <Link to="#inicio" onClick={(e) => handleMenuClick(e, '#inicio')}>
+            <Link to="/home">
               Inicio
             </Link>
           </li>
@@ -83,9 +83,9 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a href="#investigacion" onClick={(e) => handleDropdownClick(e, '#investigacion')}>
-                  Investigación
-                </a>
+                <Link to="servicios/investigacion">
+                 Investigación
+                </Link>
               </li>
               <li>
                 <Link to="servicios/seguridad-electronica">

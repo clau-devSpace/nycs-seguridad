@@ -1,7 +1,7 @@
 import React from "react";
 import './SeguridadFisica.css';
 
-export default function SeguridadFisica(){
+export default function Investigacion(){
     return(
         <>
     {/* Service Overview Section */}
