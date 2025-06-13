@@ -6,7 +6,7 @@ import ImagenHeader4 from "../../assets/images/imagen-header-5.JPG";
 
 
 
-export default function Ivestigación(){
+export default function Investigación(){
     return(
         <>
           <Header 
