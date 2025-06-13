@@ -119,7 +119,7 @@ const SecurePro = () => {
               <div className="service-icon">
                 <Grid2x2 />
               </div>
-              <h3>Servicios Complementarios</h3>
+              <h3>Servicios Generales</h3>
               <p>Detalles</p>
             </div>
           </div>
@@ -197,10 +197,17 @@ const SecurePro = () => {
               <GoogleMapEmbed />
             </div>
         </div>
+        <div>
+          <img className="boton-whatsapp" src='../assets/images/whatsapp.png'/>
+        </div>
       </section>
 
       
+
+      
     </div>
+
+
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/Group 6.png';
+import Logo2 from '../assets/images/Group 7.png'
 import { useNavbar } from '../hooks/useNavbar';
 import './Navbar.css';
 
@@ -32,13 +33,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar"
-      style={{
-        background: navBackground
-          ? 'linear-gradient(135deg, rgba(74, 74, 74, 0.95), rgba(90, 90, 90, 0.95))'
-          : 'linear-gradient(135deg, #4a4a4a, #5a5a5a)'
-      }}
-    >
+  
+  className="navbar"
+  style={{
+    background: '#ff6b35 !important', // Color fijo naranja
+    // resto de estilos...
+  }}
+>
       <div className="nav-container">
         <a href="#" className="logo">
           <img src={Logo} className='logotipo' alt='logo'/>

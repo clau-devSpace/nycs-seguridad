@@ -1,6 +1,6 @@
 /* Navbar */
 .navbar {
-    background: linear-gradient(135deg, #7a7a7a, #5a5a5a);
+    background: #ff6b35;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -25,7 +25,7 @@
 }
 
 .logotipo{
-    width: 165px;
+    width: 175px;
     height: auto;
 }
 
@@ -51,7 +51,8 @@
 }
 
 .nav-menu a:hover {
-    color: #ff6b35;
+    /*color: #ff6b35;*/
+    color: #000000;
     background: rgba(255, 107, 53, 0.1);
 }
 
@@ -145,7 +146,7 @@
     }
     
     .logotipo {
-        width: 140px;
+        width: 150px;
     }
     
     .hamburger {
