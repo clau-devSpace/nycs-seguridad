@@ -88,9 +88,9 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#seguridad-electronica" onClick={(e) => handleDropdownClick(e, '#seguridad-electronica')}>
-                  Seguridad Electrónica
-                </a>
+                <Link to="servicios/seguridad-electronica">
+                 Seguridad Electrónica
+                </Link>
               </li>
               <li>
                 <a href="#servicios-complementarios" onClick={(e) => handleDropdownClick(e, '#servicios-complementarios')}>

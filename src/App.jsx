@@ -3,6 +3,7 @@ import Layout from './Layout/Layout.jsx';
 import Home from './pages/Home.jsx';
 import Contacto from './pages/Contacto.jsx';
 import SeguridadFisica from './pages/Servicios/SeguridadFisica.jsx';
+import SeguridadElectronica from './pages/Servicios/SeguridadElectronica.jsx';
 
  export default function App() {
   return (
@@ -11,6 +12,7 @@ import SeguridadFisica from './pages/Servicios/SeguridadFisica.jsx';
         <Route index element={<Home />} />
         <Route path="contacto"  element={<Contacto />} />
         <Route path="servicios/seguridad-fisica"  element={<SeguridadFisica />} />
+        <Route path="servicios/seguridad-electronica"  element={<SeguridadElectronica />} />
       </Route>
     </Routes>
   );
