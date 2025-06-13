@@ -78,9 +78,9 @@ const Navbar = () => {
             </a>
             <ul className="dropdown-menu">
               <li>
-                <a href="#seguridad-fisica" onClick={(e) => handleDropdownClick(e, '#seguridad-fisica')}>
-                  Seguridad Física
-                </a>
+                <Link to="servicios/seguridad-fisica">
+                 Seguridad Física
+                </Link>
               </li>
               <li>
                 <a href="#investigacion" onClick={(e) => handleDropdownClick(e, '#investigacion')}>

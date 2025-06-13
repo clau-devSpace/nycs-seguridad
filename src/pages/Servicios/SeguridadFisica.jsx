@@ -1,21 +1,9 @@
+import React from "react";
+import './SeguridadFisica.css';
+
 export default function SeguridadFisica(){
     return(
         <>
-        <section className="security-hero" id="inicio">
-        <div className="security-hero-content">
-            <div className="security-breadcrumb">
-                <a href="#">Inicio</a>
-                <span>/</span>
-                <a href="#">Servicios</a>
-                <span>/</span>
-                <span>Seguridad Física</span>
-            </div>
-            <h1>Seguridad Física</h1>
-            <p className="security-hero-subtitle">Protección Integral para Personas y Propiedades</p>
-            <p>Ofrecemos servicios especializados de seguridad física con personal altamente capacitado, tecnología de vanguardia y protocolos de seguridad adaptados a cada necesidad específica.</p>
-        </div>
-    </section>
-
     {/* Service Overview Section */}
     <section className="security-service-overview">
         <div className="security-container">
@@ -97,57 +85,6 @@ export default function SeguridadFisica(){
                         <li>Prevención de pérdidas</li>
                     </ul>
                 </div>
-                <div className="security-service-card">
-                    <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-eventos.jpg" alt="Eventos y Espectáculos" /> */}
-                    </div>
-                    <h3>Eventos y Espectáculos</h3>
-                    <p>Seguridad especializada para eventos masivos, conciertos, conferencias y espectáculos públicos y privados.</p>
-                    <ul className="security-service-list">
-                        <li>Planificación de seguridad preventiva</li>
-                        <li>Control de multitudes</li>
-                        <li>Coordinación con fuerzas públicas</li>
-                        <li>Evacuación y emergencias</li>
-                    </ul>
-                </div>
-                <div className="security-service-card">
-                    <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-residencial.jpg" alt="Seguridad Residencial" /> */}
-                    </div>
-                    <h3>Seguridad Residencial</h3>
-                    <p>Protección personalizada para residencias privadas, casas de campo y propiedades de alto valor.</p>
-                    <ul className="security-service-list">
-                        <li>Vigilancia residencial discreta</li>
-                        <li>Protección familiar</li>
-                        <li>Seguridad en ausencias</li>
-                        <li>Escoltas personales</li>
-                    </ul>
-                </div>
-                <div className="security-service-card">
-                    <div className="security-service-image">
-                        {/* Aquí puedes agregar: <img src="ruta-imagen-logistica.jpg" alt="Transporte y Logística" /> */}
-                    </div>
-                    <h3>Transporte y Logística</h3>
-                    <p>Seguridad especializada para el sector logístico, puertos, aeropuertos y centros de distribución.</p>
-                    <ul className="security-service-list">
-                        <li>Vigilancia de centros logísticos</li>
-                        <li>Seguridad en muelles y andenes</li>
-                        <li>Control de cargas y descargas</li>
-                        <li>Protección anti-robo</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {/* Contact CTA Section */}
-    <section className="security-contact-cta">
-        <div className="security-container">
-            <h2>¿Necesitas una Cotización?</h2>
-            <p>Contáctanos para recibir una propuesta personalizada según tus necesidades de seguridad</p>
-            <div className="security-cta-buttons">
-                <a href="#" className="security-cta-button">Solicitar Cotización</a>
-                <a href="#" className="security-cta-button secondary">Contactar Ahora</a>
             </div>
         </div>
     </section>
