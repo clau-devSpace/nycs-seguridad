@@ -1,7 +1,7 @@
 import React from "react";
-import WhatsAppIcon from '../assets/images/whatsapp.svg';
+import { Whatsapp } from "react-bootstrap-icons";
 
-export default function WhatsApp(){
+export default function WhatsAppBoton(){
     const estilos1 = {
         position: 'fixed',
         right: '10px',
@@ -9,13 +9,14 @@ export default function WhatsApp(){
     };
 
     const estilos2 = {
-        width: '100px',
-        height: 'auto'
+        fontSize: '70px',
+        color: '#ff6b35'
     };
+
     return(
         <>
         <div style={estilos1}>
-            <img src={WhatsAppIcon} style={estilos2} alt="Boton de whatsapp" />
+           <Whatsapp style={estilos2} />
         </div>
         </>
     );

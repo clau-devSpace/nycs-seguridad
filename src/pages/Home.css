@@ -29,6 +29,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -48,7 +49,8 @@ body {
 
 .hero-content {
     max-width: 800px;
-    padding: 0 2rem;
+    padding: 2rem;
+    margin-top: 50px;
     animation: fadeInUp 1s ease-out;
     width: 100%;
 }
@@ -80,9 +82,10 @@ body {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, #ff6b35, #ff8c42);
-    color: white;
-    padding: 1rem 2.5rem;
+   /* background: linear-gradient(135deg, #ff6b35, #ff8c42);*/
+    background: white;
+    color: #333;
+    padding: 0.7rem 1.8rem;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -133,6 +136,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     word-wrap: break-word;
+    cursor: pointer;
 }
 
 .services-grid {
@@ -152,6 +156,10 @@ body {
     overflow: hidden;
     border: 1px solid #b0b7c2;
     width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .service-card::before {
@@ -215,7 +223,7 @@ body {
     position: relative;
     z-index: 1;
     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
-    border: 3px solid rgba(255, 107, 53, 0.1);
+    /*border: 3px solid rgba(255, 107, 53, 0.1);*/
 }
 
 .service-icon svg {
@@ -237,12 +245,17 @@ body {
 }
 
 .service-card p {
-    color: #666;
+    display: inline;
     line-height: 1.6;
     position: relative;
     z-index: 1;
     text-align: center;
     word-wrap: break-word;
+}
+
+.service-card a{
+    text-decoration: none;
+     color: #666;
 }
 
 /* Stats Section */

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/images/Group 6.png';
 import Logo2 from '../assets/images/Group 7.png'
 import { useNavbar } from '../hooks/useNavbar';
@@ -9,6 +9,7 @@ const Navbar = () => {
   const { navBackground, handleSmoothScroll } = useNavbar();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -31,15 +32,31 @@ const Navbar = () => {
     setIsDropdownOpen(false);
   };
 
+  // Cerrar menú cuando cambia la ruta
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
+  }, [location.pathname]);
+
+  // Hacer scroll al inicio cuando cambia la página
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  // Función para manejar clics en los Links
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
+  };
+
   return (
     <nav
-  
-  className="navbar"
-  style={{
-    background: '#ff6b35 !important', // Color fijo naranja
-    // resto de estilos...
-  }}
->
+      className="navbar"
+      style={{
+        background: '#ff6b35 !important', // Color fijo naranja
+        // resto de estilos...
+      }}
+    >
       <div className="nav-container">
         <a href="#" className="logo">
           <img src={Logo} className='logotipo' alt='logo'/>
@@ -58,7 +75,7 @@ const Navbar = () => {
         
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li className="nav-item">
-            <Link to="/home">
+            <Link to="/home" onClick={handleLinkClick}>
               Inicio
             </Link>
           </li>
@@ -79,17 +96,17 @@ const Navbar = () => {
             </a>
             <ul className="dropdown-menu">
               <li>
-                <Link to="servicios/seguridad-fisica">
+                <Link to="servicios/seguridad-fisica" onClick={handleLinkClick}>
                  Seguridad Física
                 </Link>
               </li>
               <li>
-                <Link to="servicios/investigacion">
+                <Link to="servicios/investigacion" onClick={handleLinkClick}>
                  Investigación
                 </Link>
               </li>
               <li>
-                <Link to="servicios/seguridad-electronica">
+                <Link to="servicios/seguridad-electronica" onClick={handleLinkClick}>
                  Seguridad Electrónica
                 </Link>
               </li>
@@ -107,10 +124,9 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <Link to="/contacto">
+            <Link to="/contacto" onClick={handleLinkClick}>
              Contacto
              </Link>
-             
           </li>
         </ul>
       </div>

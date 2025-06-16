@@ -2,6 +2,7 @@ import React from 'react';
 import './Contacto.css';
 import { MapPin, PhoneCall, Mail, Clock} from 'lucide-react';
 import Form from'../components/form.jsx';
+import GoogleMapEmbed from '../components/mapa.jsx'; 
 import Header from '../components/Header.jsx';
 import HeaderImage1 from '../assets/images/foto-header1.jpg';
 import HeaderImage2 from '../assets/images/foto-header2.jpg';
@@ -93,7 +94,9 @@ export default function Contacto() {
             <p>Encontranos en nuestras oficinas ubicadas estratégicamente en Buenos Aires</p>
           </div>
           <div className="contact-map-container">
-            <div className="contact-map-placeholder"></div>
+            <div className="contact-map-placeholder">
+              <GoogleMapEmbed />
+            </div>
           </div>
         </div>
       </section>

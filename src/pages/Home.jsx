@@ -1,9 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ShieldCheck, Camera, Truck, Search, Grid2x2} from 'lucide-react';
 import './Home.css'; // Importar el archivo CSS
 import GoogleMapEmbed from '../components/mapa';
 import Slider from '../components/Slider';
 import Logo from '../assets/images/Logo-definitivo-nick.png';
+import WhatsApp from '../components/whatsapp';
+import WhatsAppBoton from '../components/whatsapp';
 
 const SecurePro = () => {
   const statsRef = useRef(null);
@@ -75,6 +78,7 @@ const SecurePro = () => {
   return (
     <div>
       {/* Hero Section */}
+      <WhatsAppBoton />
       <section className="hero" id="inicio">
         <div className="hero-content">
           <h1>Seguridad Integral</h1>
@@ -99,21 +103,21 @@ const SecurePro = () => {
                 <ShieldCheck size={40} />
               </div>
               <h3>Seguridad Física</h3>
-              <p><a>Detalles</a></p>
+              <p><Link to="/servicios/seguridad-fisica">Detalles</Link></p>
             </div>
             <div className="service-card">
               <div className="service-icon">
                <Search size={40}/>
               </div>
               <h3>Investigación de casos</h3>
-              <p>Detalles</p>
+              <p><Link to="/servicios/investigacion">Detalles</Link></p>
             </div>
             <div className="service-card">
               <div className="service-icon">
                 <Camera size={40} />
               </div>
               <h3>Seguridad Electrónica</h3>
-              <p>Detalles</p>
+              <p><Link to="/servicios/seguridad-electronica">Detalles</Link></p>
             </div>
              <div className="service-card">
               <div className="service-icon">

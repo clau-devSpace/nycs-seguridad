@@ -2,7 +2,6 @@ import React from "react";
 import './SeguridadFisica.css';
 import ImagenCamara from "../../assets/images/foto-header2.jpg";
 import Alarma from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg";
-import Control from "../../assets/images/Captura de pantalla 2025-06-13 083004.png";
 import Header from "../../components/Header";
 import FotoHeader1 from "../../assets/images/fingerprint-4703841_1920.jpg";
 import FotoHeader2 from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg"
@@ -44,7 +43,7 @@ export default function SeguridadElectronica(){
                 </div>
                 <div className="security-service-card">
                     <div className="security-service-image">
-                         <img src={Control} alt="control de accesos" />
+                         <img src={Alarma} alt="control de accesos" />
                     </div>
                     <h3>Control de Accesos</h3>
                     <p>Ofrecemos variados sistemas de control de accesos, tarjetas, huellas dactilares, teclados, molinetes, etc, en conjunto con software de última generación que dan soporte y registro escrito sobre los movimientos del lugar.</p>
