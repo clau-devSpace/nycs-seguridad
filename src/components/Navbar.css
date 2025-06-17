@@ -197,22 +197,27 @@
         transform: translateX(5px);
     }
 
-    /* Mobile Dropdown Styles */
+    /* Mobile Dropdown Styles - SOLUCION AQUI */
     .dropdown-menu {
         position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
         background: rgba(255, 107, 53, 0.1);
-        margin: 0.5rem 2rem;
+        margin: 0 2rem; /* Removido el margin-top y margin-bottom */
         border-radius: 8px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        /* AGREGADO: Ocultar completamente cuando está cerrado */
+        opacity: 0;
+        visibility: hidden;
+        padding: 0; /* Remover padding cuando está cerrado */
     }
 
     .nav-item.dropdown-open .dropdown-menu {
         max-height: 300px;
+        /* AGREGADO: Mostrar cuando está abierto */
+        opacity: 1;
+        visibility: visible;
+        padding: 0.5rem 0; /* Restaurar padding cuando está abierto */
     }
 
     .dropdown-menu a {
@@ -254,6 +259,6 @@
     }
 
     .dropdown-menu {
-        margin: 0.5rem 1rem;
+        margin: 0 1rem; /* Ajustado para mantener consistencia */
     }
 }

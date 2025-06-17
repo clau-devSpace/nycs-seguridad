@@ -3,6 +3,7 @@ import './SeguridadFisica.css';
 import Header from "../../components/Header";
 import ImagenHeader3 from "../../assets/images/foto-header3.JPG";
 import ImagenHeader4 from "../../assets/images/imagen-header-5.JPG";
+import Libro from "../../assets/images/open-book-1428428_1280.jpg";
 import ImagenInvestigacion from "../../assets/images/ux-indonesia-ywwuOBJy60c-unsplash.jpg";
 
 
@@ -13,8 +14,7 @@ export default function Investigación(){
           title="Investigación"
           subtitle="Estamos aquí para ayudarte"
           description="Investigaciones especializadas para cada caso, a cargo de personal altamente calificado"
-          backgroundImage1={ImagenHeader3}
-          backgroundImage2={ImagenHeader4}
+          backgroundImage={Libro}
         />
         {/* Service Overview Section */}
         <section className="security-service-overview">

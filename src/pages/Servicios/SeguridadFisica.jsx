@@ -1,24 +1,25 @@
 import React from "react";
 import './SeguridadFisica.css';
 import Header from "../../components/Header";
-import ImagenHeader3 from "../../assets/images/foto-header3.JPG";
-import ImagenHeader4 from "../../assets/images/imagen-header-5.JPG";
+import Edicion1 from "../../assets/images/edicion1.jpg";
+import Edicion2 from "../../assets/images/edicion2.jpeg";
+import Edicion3 from "../../assets/images/image-slider-2.jpg";
 import ImagenPersonal from "../../assets/images/image-slider-3.JPG";
 import ImagenCard1 from "../../assets/images/seguridad-fisica-1.jpeg";
 import ImagenCard2 from "../../assets/images/image-slider-6.jpeg";
-
-
+import CtaSection from "../../components/CTA";
 
 export default function SeguridadFisica(){
     return(
         <>
           <Header 
-                title="Seguridad Fisica"
+                title="Seguridad Física"
                 subtitle="Estamos aquí para ayudarte"
-                description="Protección confiable con personal altamente capacitado y tecnología avanzada. Custodia y vigilancia profesional las 24 horas del día, los 365 días del año"
-                backgroundImage1={ImagenHeader3}
-                backgroundImage2={ImagenHeader4}
+                description="Protección confiable con personal altamente capacitado y tecnología avanzada. Custodia y vigilancia profesional las 24 horas del día, los 365 días del año."
+                backgroundImage={Edicion3}
+                
               />
+              
     {/* Service Overview Section */}
     <section className="security-service-overview">
         <div className="security-container">
@@ -48,63 +49,87 @@ export default function SeguridadFisica(){
                 </div>
                 <div className="security-overview-image">
                     <div className="security-image-placeholder">
-                        <img className="imagen-personal"src={ImagenPersonal} alt="foto personal NYC" />
+                        <img className="imagen-personal" src={ImagenPersonal} alt="foto personal NYC" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    {/* Services Section - MODIFICADA */}
+    {/* Services Section - Diseño Horizontal */}
     <section className="security-services-section" id="servicios">
         <div className="security-container">
             <div className="security-section-title">
                 <h2>Nuestras Especialidades</h2>
                 <p>Servicios de seguridad física adaptados a diferentes sectores y necesidades</p>
             </div>
-            <div className="security-services-grid">
-                <div className="security-service-card">
-                    <div className="security-service-image">
-                         <img src={ImagenCard1} alt="Seguridad Barrios Cerrados" />
+            
+            <div className="security-services-clean">
+                {/* Servicio 1 - Seguridad Corporativa */}
+                <div className="security-service-row">
+                    <div className="service-content">
+                        <h3>Seguridad Corporativa de Alto Nivel</h3>
+                        <p className="service-description">Protección integral para oficinas, edificios corporativos y centros de negocios con personal especializado en seguridad empresarial.</p>
+                        
+                        <ul className="service-features">
+                            <li>Control de acceso de empleados y visitantes</li>
+                            <li>Vigilancia de instalaciones corporativas</li>
+                            <li>Protección ejecutiva personalizada</li>
+                            <li>Seguridad especializada en eventos corporativos</li>
+                        </ul>
+                        
+                        <p className="service-additional">Nuestro equipo corporativo está altamente entrenado en protocolos empresariales, garantizando un ambiente seguro y profesional que se integra perfectamente con la cultura organizacional de cada cliente.</p>
                     </div>
-                    <h3>Seguridad Corporativa</h3>
-                    <p>Protección integral para oficinas, edificios corporativos y centros de negocios con personal especializado en seguridad empresarial.</p>
-                    <ul className="security-service-list">
-                        <li>Control de acceso de empleados y visitantes</li>
-                        <li>Vigilancia de instalaciones</li>
-                        <li>Protección de ejecutivos</li>
-                        <li>Seguridad en eventos corporativos</li>
-                    </ul>
+                    <div>
+                        <img src={ImagenCard1} alt="Seguridad Corporativa" className="service-image" />
+                    </div>
                 </div>
-                <div className="security-service-card">
-                    <div className="security-service-image">
-                        <img src={ImagenCard2} alt="Seguridad Barrios Cerrados" />
+
+                {/* Servicio 2 - Barrios Cerrados */}
+                <div className="security-service-row">
+                    <div className="service-content">
+                        <h3>Protección integral para barrios cerrados y urbanizaciones privadas</h3>
+                        <p className="service-description">Servicios especializados que garantizan la tranquilidad y seguridad de las familias en comunidades residenciales exclusivas.</p>
+                        
+                        <ul className="service-features">
+                            <li>Vigilancia perimetral las 24 horas del día</li>
+                            <li>Control de acceso vehicular y peatonal</li>
+                            <li>Patrullajes internos programados y aleatorios</li>
+                            <li>Monitoreo de sistemas de alarmas comunitarias</li>
+                        </ul>
+                        
+                        <p className="service-additional">Nuestro equipo especializado en seguridad residencial cuenta con protocolos específicos para entornos familiares, garantizando discreción y eficiencia en cada intervención. Trabajamos en coordinación con las administraciones de los barrios para mantener los más altos estándares de seguridad.</p>
                     </div>
-                    <h3>Barrios Cerrados</h3>
-                    <p>Servicios especializados para urbanizaciones privadas, countries y barrios cerrados con sistemas de seguridad integrados.</p>
-                    <ul className="security-service-list">
-                        <li>Vigilancia perimetral 24/7</li>
-                        <li>Control de ingresos vehiculares y peatonales</li>
-                        <li>Patrullajes internos</li>
-                        <li>Monitoreo de alarmas comunitarias</li>
-                    </ul>
+                    <div>
+                        <img src={ImagenCard2} alt="Seguridad Barrios Cerrados" className="service-image" />
+                    </div>
                 </div>
-                <div className="security-service-card">
-                    <div className="security-service-image">
-                        <img src={ImagenHeader3} alt="Seguridad Industrial" />
+
+                {/* Servicio 3 - Industria y Comercios */}
+                <div className="security-service-row">
+                    <div className="service-content">
+                        <h3>Soluciones industriales y comerciales especializadas</h3>
+                        <p className="service-description">Protección adaptada a las necesidades específicas de plantas industriales, centros comerciales y establecimientos de alto movimiento comercial.</p>
+                        
+                        <ul className="service-features">
+                            <li>Vigilancia industrial con personal certificado</li>
+                            <li>Protección de mercadería y activos de alto valor</li>
+                            <li>Control riguroso de personal y contratistas</li>
+                            <li>Sistemas integrados de prevención de pérdidas</li>
+                        </ul>
+                        
+                        <p className="service-additional">Entendemos que cada industria tiene sus particularidades y riesgos específicos. Por eso desarrollamos planes de seguridad personalizados que se integran perfectamente con los procesos operativos de cada cliente, sin interrumpir la productividad.</p>
                     </div>
-                    <h3>Industria y Comercios</h3>
-                    <p>Soluciones de seguridad para plantas industriales, depósitos, centros comerciales y establecimientos comerciales.</p>
-                    <ul className="security-service-list">
-                        <li>Vigilancia industrial especializada</li>
-                        <li>Protección de mercadería y activos</li>
-                        <li>Control de personal y contratistas</li>
-                        <li>Prevención de pérdidas</li>
-                    </ul>
+                    <div>
+                        <img src={Edicion3} alt="Seguridad Industrial" className="service-image" />
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
+    
+    <CtaSection />
         </>
     );
 }

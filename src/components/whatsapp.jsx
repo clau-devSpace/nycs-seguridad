@@ -5,7 +5,8 @@ export default function WhatsAppBoton(){
     const estilos1 = {
         position: 'fixed',
         right: '10px',
-        bottom: '20px'
+        bottom: '20px',
+        zIndex: '1000'
     };
 
     const estilos2 = {

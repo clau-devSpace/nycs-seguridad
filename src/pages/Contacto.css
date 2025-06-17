@@ -274,38 +274,11 @@
 }
 
 .contact-map-container {
-    background: white;
-    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border: 2px solid rgba(255, 107, 53, 0.1);
-}
-
-.contact-map-placeholder {
-    width: 100%;
-    height: 350px;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(255, 140, 66, 0.05));
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px dashed rgba(255, 107, 53, 0.2);
-    position: relative;
-}
-
-.contact-map-placeholder::before {
-    content: '🗺️';
-    font-size: 3rem;
-    opacity: 0.3;
-    margin-bottom: 0.5rem;
-}
-
-.contact-map-placeholder::after {
-    content: 'Mapa Interactivo - Nuestras Ubicaciones';
-    color: #ff6b35;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: center;
 }
 
 .contact-footer {
