@@ -112,7 +112,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="#servicios-complementarios" onClick={(e) => handleDropdownClick(e, '#servicios-complementarios')}>
-                  Servicios Complementarios
+                  Servicios Generales
                 </a>
               </li>
             </ul>

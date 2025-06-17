@@ -7,6 +7,7 @@ import Slider from '../components/Slider';
 import Logo from '../assets/images/Logo-definitivo-nick.png';
 import WhatsApp from '../components/whatsapp';
 import WhatsAppBoton from '../components/whatsapp';
+import CtaSection from '../components/CTA';
 
 const SecurePro = () => {
   const statsRef = useRef(null);
@@ -83,8 +84,8 @@ const SecurePro = () => {
         <div className="hero-content">
           <h1>Seguridad Integral</h1>
           <p className="hero-subtitle">Protección Profesional 24/7</p>
-          <p>Brindamos servicios de seguridad privada, electrónica y custodia de mercadería con los más altos estándares de calidad y profesionalismo.</p>
-          <a href="#servicios" className="cta-button" onClick={(e) => handleSmoothScroll(e, '#servicios')}>
+          <p>Brindamos servicios de seguridad privada con los más altos estándares de calidad y profesionalismo.</p>
+          <a href="#servicios" className="cta-boton" onClick={(e) => handleSmoothScroll(e, '#servicios')}>
             Conocer Servicios
           </a>
         </div>
@@ -136,7 +137,7 @@ const SecurePro = () => {
           <div className="about-content">
             <div className="about-text">
               <h2>Sobre Nosotros</h2>
-              <p>Con más de 15 años de experiencia en el sector de la seguridad, somos una empresa líder que se dedica a brindar soluciones integrales de protección a empresas y particulares.</p>
+              <p>Con más de 20 años de experiencia en el sector de la seguridad, somos una empresa líder que se dedica a brindar soluciones integrales de protección a empresas y particulares.</p>
               <p>Nuestro equipo está formado por profesionales altamente capacitados y certificados, comprometidos con la excelencia en el servicio y la innovación constante en tecnologías de seguridad.</p>
               <div className="about-features">
                 <div className="feature-item">
@@ -206,8 +207,7 @@ const SecurePro = () => {
         </div>
       </section>
 
-      
-
+      <CtaSection />
       
     </div>
 

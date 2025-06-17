@@ -47,11 +47,6 @@ export default function SeguridadFisica(){
                         </div>
                     </div>
                 </div>
-                <div className="security-overview-image">
-                    <div className="security-image-placeholder">
-                        <img className="imagen-personal" src={ImagenPersonal} alt="foto personal NYC" />
-                    </div>
-                </div>
             </div>
         </div>
     </section>

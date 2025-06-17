@@ -19,10 +19,11 @@
 }
 
 .security-overview-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    max-width: 1000px;
 }
 
 .security-overview-text h2 {
@@ -166,7 +167,7 @@
 }
 
 .service-features li {
-    color: #ff6b35;
+    color: #999;
     margin-bottom: 1rem;
     font-size: 1rem;
     position: relative;

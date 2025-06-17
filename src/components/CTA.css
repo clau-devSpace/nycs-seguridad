@@ -15,15 +15,12 @@
   white-space: nowrap;
   font-size: 0.9rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #25D366 0%, #1ebe57 100%);
+  background: #ff6b35;
   color: white;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
 }
 
 .cta-button:hover {
-  background: linear-gradient(135deg, #1ebe57 0%, #17a74a 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
 }
 
 .cta-button:active {

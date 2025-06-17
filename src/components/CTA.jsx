@@ -15,7 +15,7 @@ const CtaSection = () => {
         </h2>
         
         <p className="cta-description">
-          Con más de 27 años de experiencia, ofrecemos soluciones de seguridad 
+          Con más de 20 años de experiencia, ofrecemos soluciones de seguridad 
           personalizadas para empresas y particulares. Contáctanos para una consulta 
           gratuita.
         </p>
@@ -28,8 +28,7 @@ const CtaSection = () => {
           onClick={handleWhatsAppClick}
         >
           <span className="cta-button__content">
-            <span className="cta-button__icon">💬</span>
-            <span className="cta-button__text">Chatear por WhatsApp</span>
+            <span className="cta-button__text">Contáctanos</span>
           </span>
           <span className="cta-button__overlay"></span>
         </a>

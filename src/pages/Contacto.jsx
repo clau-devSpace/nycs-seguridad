@@ -7,6 +7,7 @@ import Header from '../components/Header.jsx';
 import HeaderImage1 from '../assets/images/foto-header1.jpg';
 import HeaderImage2 from '../assets/images/foto-header2.jpg';
 import ImagenContacto from '../assets/images/edicion1.jpg';
+import CtaSection from '../components/CTA.jsx';
 
 export default function Contacto() {
   return (
@@ -100,6 +101,7 @@ export default function Contacto() {
           </div>
         </div>
       </section>
+      <CtaSection />
     </>
   );
 };

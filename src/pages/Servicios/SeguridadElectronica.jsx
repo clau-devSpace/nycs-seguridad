@@ -5,6 +5,8 @@ import Alarma from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg
 import Header from "../../components/Header";
 import FotoHeader1 from "../../assets/images/fingerprint-4703841_1920.jpg";
 import FotoHeader2 from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg";
+import Totem from "../../assets/images/totem.png";
+import AlarmaSeguridad from "../../assets/images/alarma-seguridad.jpg"
 import CtaSection from "../../components/CTA";
 
 export default function SeguridadElectronica(){
@@ -44,11 +46,6 @@ export default function SeguridadElectronica(){
                         </div>
                     </div>
                 </div>
-                <div className="security-overview-image">
-                    <div className="security-image-placeholder">
-                        <img className="imagen-personal" src={FotoHeader2} alt="Sistemas de seguridad electrónica" />
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -78,7 +75,7 @@ export default function SeguridadElectronica(){
                         <p className="service-additional">La función de un sistema de alarma es advertir el allanamiento en el inmueble, para poder garantizar la seguridad de personas y bienes. Nuestros sistemas electrónicos se activan mediante clave personalizada y se disparan en el momento en que los sensores detectan algún movimiento fuera de lo común.</p>
                     </div>
                     <div>
-                        <img src={Alarma} alt="Sistema de alarmas" className="service-image" />
+                        <img src={AlarmaSeguridad} alt="Sistema de alarmas" className="service-image" />
                     </div>
                 </div>
 
@@ -104,6 +101,27 @@ export default function SeguridadElectronica(){
 
                 {/* Servicio 3 - Control de Accesos */}
                 <div className="security-service-row">
+                    <div className="service-content">
+                        <h3>Totem Vigilador Virtual</h3>
+                        <p className="service-description">Nuestro Totem de Seguridad combina tecnologías avanzadas y un diseño robusto para brindar máxima seguridad. Características destacadas:</p>
+                        
+                        <ul className="service-features">
+                            <li>Vigilador en vivo</li>
+                            <li>Pantalla HD integrada</li>
+                            <li>Audio bidireccional</li>
+                            <li>Activación Automática</li>
+                            <li>Control de acceso</li>
+                            <li>Respuesta inmediata</li>
+                        </ul>
+                        
+                        <p className="service-additional">Ofrecemos variados sistemas de control de accesos: tarjetas, huellas dactilares, teclados, molinetes, etc., en conjunto con software de última generación que dan soporte y registro escrito sobre los movimientos del lugar, garantizando un control total de los accesos.</p>
+                    </div>
+                    <div>
+                        <img src={Totem} alt="Control de accesos" className="service-image" />
+                    </div>
+                </div>
+
+                  <div className="security-service-row">
                     <div className="service-content">
                         <h3>Control de Accesos Biométrico y Digital</h3>
                         <p className="service-description">Sistemas avanzados de control de acceso con múltiples métodos de identificación y software de gestión integral.</p>
