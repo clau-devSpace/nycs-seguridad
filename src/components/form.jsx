@@ -27,25 +27,28 @@ export default function Form() {
             <input type="tel" id="telefono" name="telefono" required />
           </div>
         </div>
-
-        <div className="form-group">
+        
+        <div className='form-row full-width'>
+           <div className="form-group">
           <label htmlFor="empresa">Empresa</label>
           <input type="text" id="empresa" name="empresa" />
         </div>
-
-        <div className="form-group">
+        </div>
+       
+        <div className='form-row full-width'>
+           <div className="form-group">
           <label htmlFor="servicio">Servicio de Interés</label>
           <select id="servicio" name="servicio">
             <option value="">Seleccione un servicio</option>
             <option value="seguridad-fisica">Seguridad Física</option>
-            <option value="monitoreo-alarmas">Monitoreo de Alarmas</option>
-            <option value="seguridad-electronica">Seguridad Electrónica</option>
-            <option value="seguridad-corporativa">Seguridad Corporativa</option>
-            <option value="eventos">Eventos y Espectáculos</option>
-            <option value="otros">Otros Servicios</option>
+            <option value="monitoreo-alarmas">Seguridad Electrónica</option>
+            <option value="seguridad-electronica">Investigación</option>
+            <option value="seguridad-corporativa">Otros</option>
           </select>
         </div>
-
+        </div>
+       
+       <div className='form-row full-width'>
         <div className="form-group">
           <label htmlFor="mensaje">Mensaje *</label>
           <textarea
@@ -55,6 +58,7 @@ export default function Form() {
             required
           ></textarea>
         </div>
+       </div>
 
         <button type="submit" className="submit-btn">
           Enviar Consulta
