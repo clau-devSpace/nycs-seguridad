@@ -6,6 +6,7 @@ import GoogleMapEmbed from '../components/mapa.jsx';
 import Header from '../components/Header.jsx';
 import HeaderImage1 from '../assets/images/foto-header1.jpg';
 import HeaderImage2 from '../assets/images/foto-header2.jpg';
+import ImagenContacto from '../assets/images/edicion1.jpg';
 
 export default function Contacto() {
   return (
@@ -14,8 +15,7 @@ export default function Contacto() {
         title="Contacto"
         subtitle="Estamos aquí para ayudarte"
         description="Ponete en contacto con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas"
-        backgroundImage1={HeaderImage1}
-        backgroundImage2={HeaderImage2}
+        backgroundImage={ImagenContacto}
       />
 
       {/* Contact Section */}
