@@ -6,11 +6,13 @@ import ImagenHeader4 from "../../assets/images/imagen-header-5.JPG";
 import Libro from "../../assets/images/open-book-1428428_1280.jpg";
 import ImagenInvestigacion from "../../assets/images/ux-indonesia-ywwuOBJy60c-unsplash.jpg";
 import CtaSection from "../../components/CTA";
+import WhatsAppBoton from "../../components/whatsapp";
 
 
 export default function Investigación(){
     return (
       <>
+        <WhatsAppBoton />
         <Header
           title="Investigación"
           subtitle="Estamos aquí para ayudarte"

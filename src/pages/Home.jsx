@@ -196,7 +196,6 @@ const SecurePro = () => {
         <div className="map-container">
           <div className="section-title">
             <h2>Nuestra Ubicación</h2>
-            <p>Encuéntranos y contáctanos para una consulta personalizada</p>
           </div>
             <div className="map-placeholder">
               <GoogleMapEmbed />

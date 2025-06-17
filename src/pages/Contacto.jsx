@@ -8,10 +8,12 @@ import HeaderImage1 from '../assets/images/foto-header1.jpg';
 import HeaderImage2 from '../assets/images/foto-header2.jpg';
 import ImagenContacto from '../assets/images/edicion1.jpg';
 import CtaSection from '../components/CTA.jsx';
+import WhatsAppBoton from '../components/whatsapp.jsx';
 
 export default function Contacto() {
   return (
     <>
+      <WhatsAppBoton />
       <Header 
         title="Contacto"
         subtitle="Estamos aquí para ayudarte"
@@ -32,8 +34,8 @@ export default function Contacto() {
                     title: "Oficina Central",
                     content: (
                       <p>
-                        Av. Corrientes 1234, Piso 8<br />
-                        C1043AAZ - Buenos Aires, Argentina
+                        España 1055<br />
+                        U9000 - Comodoro Rivadavia, Chubut
                       </p>
                     ),
                     icon: <MapPin />
@@ -42,9 +44,9 @@ export default function Contacto() {
                     title: "Teléfonos",
                     content: (
                       <p>
-                        <a href="tel:+541143216543">+54 11 4321-6543</a> / 
-                        <a href="tel:+541143216544"> 4321-6544</a><br />
-                        <strong>Emergencias 24hs:</strong> <a href="tel:+541143219999">4321-9999</a>
+                        <a href="tel:+541143216543">Aca telefono nuevo</a> / 
+                        <a href="tel:+541143216544"> </a><br />
+                        <a href="tel:+541143219999">4467937</a>
                       </p>
                     ),
                     icon: <PhoneCall />
@@ -53,8 +55,7 @@ export default function Contacto() {
                     title: "Email",
                     content: (
                       <p>
-                        <a href="mailto:info@securepro.com.ar">info@securepro.com.ar</a><br />
-                        <a href="mailto:ventas@securepro.com.ar">ventas@securepro.com.ar</a>
+                        <a href="mailto:info@securepro.com.ar">info@nycseguridad.com.ar</a>
                       </p>
                     ),
                     icon: <Mail />
@@ -91,8 +92,7 @@ export default function Contacto() {
       <section className="contact-map-section">
         <div className="contact-main-container">
           <div className="contact-section-title">
-            <h2>Nuestras Ubicaciones</h2>
-            <p>Encontranos en nuestras oficinas ubicadas estratégicamente en Buenos Aires</p>
+            <h2>Nuestra Ubicación</h2>
           </div>
           <div className="contact-map-container">
             <div className="contact-map-placeholder">

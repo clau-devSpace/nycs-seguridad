@@ -8,10 +8,12 @@ import ImagenPersonal from "../../assets/images/image-slider-3.JPG";
 import ImagenCard1 from "../../assets/images/seguridad-fisica-1.jpeg";
 import ImagenCard2 from "../../assets/images/image-slider-6.jpeg";
 import CtaSection from "../../components/CTA";
+import WhatsAppBoton from "../../components/whatsapp";
 
 export default function SeguridadFisica(){
     return(
         <>
+          <WhatsAppBoton />
           <Header 
                 title="Seguridad Física"
                 subtitle="Estamos aquí para ayudarte"

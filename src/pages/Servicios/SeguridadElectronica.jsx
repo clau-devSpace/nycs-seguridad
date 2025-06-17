@@ -8,10 +8,12 @@ import FotoHeader2 from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplas
 import Totem from "../../assets/images/totem.png";
 import AlarmaSeguridad from "../../assets/images/alarma-seguridad.jpg"
 import CtaSection from "../../components/CTA";
+import WhatsAppBoton from "../../components/whatsapp";
 
 export default function SeguridadElectronica(){
     return(
         <>
+            <WhatsAppBoton />
         <Header 
                 title="Seguridad Electrónica"
                 subtitle="Estamos aquí para ayudarte"

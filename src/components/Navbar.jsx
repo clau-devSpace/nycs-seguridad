@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Logo from '../assets/images/Group 6.png';
 import Logo2 from '../assets/images/Group 7.png'
 import { useNavbar } from '../hooks/useNavbar';
@@ -10,6 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,8 +22,8 @@ const Navbar = () => {
 
   const handleMenuClick = (e, target) => {
     handleSmoothScroll(e, target);
-    setIsMenuOpen(false); // Cerrar el menú después de hacer clic
-    setIsDropdownOpen(false); // Cerrar el dropdown también
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
   };
 
   const handleDropdownClick = (e, target) => {
@@ -30,6 +31,31 @@ const Navbar = () => {
     handleSmoothScroll(e, target);
     setIsMenuOpen(false);
     setIsDropdownOpen(false);
+  };
+
+  // Nueva función para manejar navegación a secciones
+  const handleSectionNavigation = (e, sectionId) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
+
+    // Si estamos en la página principal (/home), hacer scroll directo
+    if (location.pathname === '/home' || location.pathname === '/') {
+      handleSmoothScroll(e, sectionId);
+    } else {
+      // Si estamos en otra página, navegar primero a home y luego hacer scroll
+      navigate('/home');
+      // Pequeño delay para asegurar que la página se cargue antes del scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId.replace('#', ''));
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100);
+    }
   };
 
   // Cerrar menú cuando cambia la ruta
@@ -85,7 +111,7 @@ const Navbar = () => {
               href="#servicios" 
               onClick={(e) => {
                 if (window.innerWidth > 768) {
-                  handleMenuClick(e, '#servicios');
+                  handleSectionNavigation(e, '#servicios');
                 } else {
                   e.preventDefault();
                   toggleDropdown();
@@ -111,7 +137,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a href="#servicios-complementarios" onClick={(e) => handleDropdownClick(e, '#servicios-complementarios')}>
+                <a href="#servicios-complementarios" onClick={(e) => handleSectionNavigation(e, '#servicios-complementarios')}>
                   Servicios Generales
                 </a>
               </li>
@@ -119,7 +145,7 @@ const Navbar = () => {
           </li>
           
           <li className="nav-item">
-            <a href="#nosotros" onClick={(e) => handleMenuClick(e, '#nosotros')}>
+            <a href="#nosotros" onClick={(e) => handleSectionNavigation(e, '#nosotros')}>
               Nosotros
             </a>
           </li>
