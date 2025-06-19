@@ -120,13 +120,6 @@ const SecurePro = () => {
               <h3>Seguridad Electrónica</h3>
               <p><Link to="/servicios/seguridad-electronica">Detalles</Link></p>
             </div>
-             <div className="service-card">
-              <div className="service-icon">
-                <Grid2x2 />
-              </div>
-              <h3>Servicios Generales</h3>
-              <p>Detalles</p>
-            </div>
           </div>
         </div>
       </section>
@@ -172,7 +165,7 @@ const SecurePro = () => {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">15+</span>
+              <span className="stat-number">20+</span>
               <span className="stat-label">Años de Experiencia</span>
             </div>
             <div className="stat-item">

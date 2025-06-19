@@ -119,7 +119,7 @@ export default function SeguridadElectronica(){
                         <p className="service-additional">Ofrecemos variados sistemas de control de accesos: tarjetas, huellas dactilares, teclados, molinetes, etc., en conjunto con software de última generación que dan soporte y registro escrito sobre los movimientos del lugar, garantizando un control total de los accesos.</p>
                     </div>
                     <div>
-                        <img src={Totem} alt="Control de accesos" className="service-image" />
+                        <img src={Totem} alt="Control de accesos" className="service-image totem" />
                     </div>
                 </div>
 

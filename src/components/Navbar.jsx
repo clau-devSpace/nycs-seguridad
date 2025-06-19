@@ -105,6 +105,12 @@ const Navbar = () => {
               Inicio
             </Link>
           </li>
+
+           <li className="nav-item">
+            <a href="#nosotros" onClick={(e) => handleSectionNavigation(e, '#nosotros')}>
+              Nosotros
+            </a>
+           </li>
           
           <li className={`nav-item has-dropdown ${isDropdownOpen ? 'dropdown-open' : ''}`}>
             <a 
@@ -136,19 +142,9 @@ const Navbar = () => {
                  Seguridad Electrónica
                 </Link>
               </li>
-              <li>
-                <a href="#servicios-complementarios" onClick={(e) => handleSectionNavigation(e, '#servicios-complementarios')}>
-                  Servicios Generales
-                </a>
-              </li>
             </ul>
           </li>
           
-          <li className="nav-item">
-            <a href="#nosotros" onClick={(e) => handleSectionNavigation(e, '#nosotros')}>
-              Nosotros
-            </a>
-          </li>
           <li className="nav-item">
             <Link to="/contacto" onClick={handleLinkClick}>
              Contacto
