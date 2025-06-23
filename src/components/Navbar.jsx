@@ -132,14 +132,14 @@ const Navbar = () => {
                  Seguridad Física
                 </Link>
               </li>
-              <li>
-                <Link to="servicios/investigacion" onClick={handleLinkClick}>
-                 Investigación
+               <li>
+                <Link to="servicios/seguridad-electronica" onClick={handleLinkClick}>
+                 Seguridad Electrónica
                 </Link>
               </li>
               <li>
-                <Link to="servicios/seguridad-electronica" onClick={handleLinkClick}>
-                 Seguridad Electrónica
+                <Link to="servicios/investigacion" onClick={handleLinkClick}>
+                 Investigaciones
                 </Link>
               </li>
             </ul>

@@ -106,19 +106,19 @@ const SecurePro = () => {
               <h3>Seguridad Física</h3>
               <p><Link to="/servicios/seguridad-fisica">Detalles</Link></p>
             </div>
-            <div className="service-card">
-              <div className="service-icon">
-               <Search size={40}/>
-              </div>
-              <h3>Investigación de casos</h3>
-              <p><Link to="/servicios/investigacion">Detalles</Link></p>
-            </div>
-            <div className="service-card">
+             <div className="service-card">
               <div className="service-icon">
                 <Camera size={40} />
               </div>
               <h3>Seguridad Electrónica</h3>
               <p><Link to="/servicios/seguridad-electronica">Detalles</Link></p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">
+               <Search size={40}/>
+              </div>
+              <h3>Investigaciones</h3>
+              <p><Link to="/servicios/investigacion">Detalles</Link></p>
             </div>
           </div>
         </div>
@@ -129,8 +129,8 @@ const SecurePro = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>Sobre Nosotros</h2>
-              <p>Con más de 20 años de experiencia en el sector de la seguridad, somos una empresa líder que se dedica a brindar soluciones integrales de protección a empresas y particulares.</p>
+              <h2>Nosotros</h2>
+              <p>Con más de 20 años de experiencia en el sector de la seguridad, somos una empresa líder que se dedica a brindar soluciones integrales de protección a empresas e industrias.</p>
               <p>Nuestro equipo está formado por profesionales altamente capacitados y certificados, comprometidos con la excelencia en el servicio y la innovación constante en tecnologías de seguridad.</p>
               <div className="about-features">
                 <div className="feature-item">
@@ -148,6 +148,10 @@ const SecurePro = () => {
                 <div className="feature-item">
                   <span className="feature-icon">✓</span>
                   <span className="feature-text">Soporte 24/7</span>
+                </div>
+                 <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span className="feature-text">Reducción de Costos</span>
                 </div>
               </div>
             </div>

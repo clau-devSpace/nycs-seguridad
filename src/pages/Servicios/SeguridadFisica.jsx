@@ -16,7 +16,6 @@ export default function SeguridadFisica(){
           <WhatsAppBoton />
           <Header 
                 title="Seguridad Física"
-                subtitle="Estamos aquí para ayudarte"
                 description="Protección confiable con personal altamente capacitado y tecnología avanzada. Custodia y vigilancia profesional las 24 horas del día, los 365 días del año."
                 backgroundImage={Edicion3}
                 
@@ -66,16 +65,16 @@ export default function SeguridadFisica(){
                 <div className="security-service-row">
                     <div className="service-content">
                         <h3>Seguridad Corporativa de Alto Nivel</h3>
-                        <p className="service-description">Protección integral para oficinas, edificios corporativos y centros de negocios con personal especializado en seguridad empresarial.</p>
+                        <p className="service-description">Protección a Empresas y Locaciones Corporativas</p>
                         
                         <ul className="service-features">
-                            <li>Control de acceso de empleados y visitantes</li>
+                            <li>Personal calificado y con entrenamiento continuo</li>
                             <li>Vigilancia de instalaciones corporativas</li>
                             <li>Protección ejecutiva personalizada</li>
                             <li>Seguridad especializada en eventos corporativos</li>
                         </ul>
                         
-                        <p className="service-additional">Nuestro equipo corporativo está altamente entrenado en protocolos empresariales, garantizando un ambiente seguro y profesional que se integra perfectamente con la cultura organizacional de cada cliente.</p>
+                        <p className="service-additional">Protección Corporativa en todos los entornos</p>
                     </div>
                     <div>
                         <img src={ImagenCard1} alt="Seguridad Corporativa" className="service-image" />

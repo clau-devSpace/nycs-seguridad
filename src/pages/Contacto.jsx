@@ -16,7 +16,6 @@ export default function Contacto() {
       <WhatsAppBoton />
       <Header 
         title="Contacto"
-        subtitle="Estamos aquí para ayudarte"
         description="Ponete en contacto con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas"
         backgroundImage={ImagenContacto}
       />

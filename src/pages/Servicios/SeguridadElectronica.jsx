@@ -16,7 +16,6 @@ export default function SeguridadElectronica(){
             <WhatsAppBoton />
         <Header 
                 title="Seguridad Electrónica"
-                subtitle="Estamos aquí para ayudarte"
                 description="Equipos de seguridad de alta tecnología con monitoreo remoto las 24 horas del día, los 365 días del año."
                 backgroundImage={FotoHeader1}
               />

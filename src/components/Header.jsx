@@ -3,7 +3,6 @@ import './Header.css';
 
 function Header({ 
   title, 
-  subtitle, 
   description,
   backgroundImage1,
   backgroundImage2,
@@ -54,19 +53,6 @@ function Header({
         >
           {title}
         </h1>
-        
-        <p 
-          className="page-header-subtitle"
-          style={hasBackgroundImage ? { 
-            color: '#ff6b35', 
-            background: 'rgba(255,255,255,0.1)', 
-            padding: '0.2rem 0.8rem', 
-            borderRadius: '20px', 
-            display: 'inline-block' 
-          } : {}}
-        >
-          {subtitle}
-        </p>
         
         <p 
           style={hasBackgroundImage ? { color: 'rgba(255,255,255,0.9)' } : {}}

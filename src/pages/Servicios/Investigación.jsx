@@ -14,7 +14,7 @@ export default function Investigación(){
       <>
         <WhatsAppBoton />
         <Header
-          title="Investigación"
+          title="Investigaciones"
           subtitle="Estamos aquí para ayudarte"
           description="Investigaciones especializadas para cada caso, a cargo de personal altamente calificado"
           backgroundImage={Libro}
