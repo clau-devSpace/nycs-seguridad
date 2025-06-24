@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Logo from '../assets/images/Group 6.png';
 import Logo2 from '../assets/images/Group 7.png'
+import Logo3 from '../assets/images/Group 21.png';
 import { useNavbar } from '../hooks/useNavbar';
 import './Navbar.css';
 
@@ -85,7 +86,7 @@ const Navbar = () => {
     >
       <div className="nav-container">
         <a href="#" className="logo">
-          <img src={Logo} className='logotipo' alt='logo'/>
+          <img src={Logo3} className='logotipo' alt='logo'/>
         </a>
         
         {/* Hamburger Menu Button */}

@@ -29,7 +29,7 @@ export default function WhatsAppBoton(){
     return(
         <>
         <div style={estilos1}>
-            <p style={estilos3}>Estamos aquí para ayudarte</p>
+           {/*<p style={estilos3}>Estamos aquí para ayudarte</p> */} 
            <Whatsapp style={estilos2} />
         </div>
         </>

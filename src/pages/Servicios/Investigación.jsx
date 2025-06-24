@@ -24,7 +24,7 @@ export default function Investigación(){
           <div className="security-container">
             <div className="security-overview-content">
               <div className="security-overview-text">
-                <h2>Investigamos tu caso</h2>
+                <h2>Investigaciones</h2>
                 <p>
                   En NYC contamos con un equipo especializado dedicado a
                   ejecutar investigaciones integrales, abarcando tanto el ámbito

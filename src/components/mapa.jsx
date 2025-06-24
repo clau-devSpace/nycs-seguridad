@@ -2,8 +2,9 @@ import React from 'react';
 
 const GoogleMapEmbed = () => {
   const mapStyles = {
-    width: '650px',
+    width: '850px',
     height: '400px',
+    borderRadius: '8px',
     border: '0'
   };
 

@@ -5,7 +5,7 @@ import Alarma from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg
 import Header from "../../components/Header";
 import FotoHeader1 from "../../assets/images/fingerprint-4703841_1920.jpg";
 import FotoHeader2 from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg";
-import Totem from "../../assets/images/totem.png";
+import Totem from "../../assets/images/totem3.png"
 import Dron from "../../assets/images/drone-5967868_640.png";
 import AlarmaSeguridad from "../../assets/images/alarma-seguridad.jpg"
 import CtaSection from "../../components/CTA";
