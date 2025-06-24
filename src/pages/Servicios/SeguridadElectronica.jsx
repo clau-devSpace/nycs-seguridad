@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import FotoHeader1 from "../../assets/images/fingerprint-4703841_1920.jpg";
 import FotoHeader2 from "../../assets/images/bernard-hermant-Hd0m_5-OyCw-unsplash.jpg";
 import Totem from "../../assets/images/totem.png";
+import Dron from "../../assets/images/drone-5967868_640.png";
 import AlarmaSeguridad from "../../assets/images/alarma-seguridad.jpg"
 import CtaSection from "../../components/CTA";
 import WhatsAppBoton from "../../components/whatsapp";
@@ -45,6 +46,14 @@ export default function SeguridadElectronica(){
                             <span className="security-feature-icon">🌐</span>
                             <span className="security-feature-text">Acceso Online</span>
                         </div>
+                          <div className="security-feature-item">
+                            <span className="security-feature-icon"><img className="dron" src={Dron}/></span>
+                            <span className="security-feature-text">Vigilancia Aérea con Drones</span>
+                        </div>
+                          <div className="security-feature-item">
+                            <span className="security-feature-icon">🤖</span>
+                            <span className="security-feature-text">Recorridas Programadas con Robots Autónomos</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,8 +81,6 @@ export default function SeguridadElectronica(){
                             <li>Notificaciones inmediatas a dispositivos móviles</li>
                             <li>Integración con sistemas de monitoreo 24/7</li>
                         </ul>
-                        
-                        <p className="service-additional">La función de un sistema de alarma es advertir el allanamiento en el inmueble, para poder garantizar la seguridad de personas y bienes. Nuestros sistemas electrónicos se activan mediante clave personalizada y se disparan en el momento en que los sensores detectan algún movimiento fuera de lo común.</p>
                     </div>
                     <div>
                         <img src={AlarmaSeguridad} alt="Sistema de alarmas" className="service-image" />
@@ -83,7 +90,7 @@ export default function SeguridadElectronica(){
                 {/* Servicio 2 - Video Cámaras */}
                 <div className="security-service-row">
                     <div className="service-content">
-                        <h3>Sistemas de Video Vigilancia Avanzada</h3>
+                        <h3>Cámaras de Seguridad</h3>
                         <p className="service-description">Cámaras de seguridad IP y CCTV con acceso remoto para monitoreo continuo desde cualquier lugar del mundo.</p>
                         
                         <ul className="service-features">
@@ -92,8 +99,6 @@ export default function SeguridadElectronica(){
                             <li>Acceso remoto desde PC y dispositivos móviles</li>
                             <li>Visión nocturna y detección de movimiento</li>
                         </ul>
-                        
-                        <p className="service-additional">Las cámaras de seguridad instaladas pueden ser IP y CCTV, mediante las mismas se puede controlar su hogar y empresa desde cualquier lugar del mundo, las 24 hs del día, a través de internet mediante una PC, o con su dispositivo móvil iPhone, Android, Windows mobile, etc.</p>
                     </div>
                     <div>
                         <img src={ImagenCamara} alt="Cámaras de seguridad" className="service-image" />
@@ -130,7 +135,7 @@ export default function SeguridadElectronica(){
                         <ul className="service-features">
                             <li>Sistemas de tarjetas inteligentes</li>
                             <li>Lectores de huellas dactilares</li>
-                            <li>Teclados de código y molinetes</li>
+                            <li>Reconocimiento facial</li>
                             <li>Software de gestión y reportes detallados</li>
                         </ul>
                         

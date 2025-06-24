@@ -71,10 +71,8 @@ export default function SeguridadFisica(){
                             <li>Personal calificado y con entrenamiento continuo</li>
                             <li>Vigilancia de instalaciones corporativas</li>
                             <li>Protección ejecutiva personalizada</li>
-                            <li>Seguridad especializada en eventos corporativos</li>
+                            <li>Seguridad especializada para eventos</li>
                         </ul>
-                        
-                        <p className="service-additional">Protección Corporativa en todos los entornos</p>
                     </div>
                     <div>
                         <img src={ImagenCard1} alt="Seguridad Corporativa" className="service-image" />
@@ -104,14 +102,14 @@ export default function SeguridadFisica(){
                 {/* Servicio 3 - Industria y Comercios */}
                 <div className="security-service-row">
                     <div className="service-content">
-                        <h3>Soluciones industriales y comerciales especializadas</h3>
-                        <p className="service-description">Protección adaptada a las necesidades específicas de plantas industriales, centros comerciales y establecimientos de alto movimiento comercial.</p>
+                        <h3>Soluciones para Empresas e Industrias</h3>
+                        <p className="service-description">Soluciones personalizadas para empresas petroleras y de energía</p>
                         
                         <ul className="service-features">
                             <li>Vigilancia industrial con personal certificado</li>
                             <li>Protección de mercadería y activos de alto valor</li>
                             <li>Control riguroso de personal y contratistas</li>
-                            <li>Sistemas integrados de prevención de pérdidas</li>
+                            <li>Control de pérdidas</li>
                         </ul>
                         
                         <p className="service-additional">Entendemos que cada industria tiene sus particularidades y riesgos específicos. Por eso desarrollamos planes de seguridad personalizados que se integran perfectamente con los procesos operativos de cada cliente, sin interrumpir la productividad.</p>
