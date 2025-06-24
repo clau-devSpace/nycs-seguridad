@@ -136,10 +136,8 @@ export default function SeguridadElectronica(){
                             <li>Sistemas de tarjetas inteligentes</li>
                             <li>Lectores de huellas dactilares</li>
                             <li>Reconocimiento facial</li>
-                            <li>Software de gestión y reportes detallados</li>
                         </ul>
                         
-                        <p className="service-additional">Ofrecemos variados sistemas de control de accesos: tarjetas, huellas dactilares, teclados, molinetes, etc., en conjunto con software de última generación que dan soporte y registro escrito sobre los movimientos del lugar, garantizando un control total de los accesos.</p>
                     </div>
                     <div>
                         <img src={FotoHeader1} alt="Control de accesos" className="service-image" />
