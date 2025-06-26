@@ -1,17 +1,12 @@
-import React, {useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useState, useEffect } from 'react';
 import EnergiaDelSur from '../assets/images/logoEnergiadelSur.png';
 import Pecom from '../assets/images/pecom_color_logotipo.svg';
 import Novomet from '../assets/images/novomet-logo.png';
 import Crane from '../assets/images/logo-crane.svg';
 import Ulterra from '../assets/images/Ulterra-logo.jpeg';
+import Geovial from '../assets/images/geovial.jpg';
+import GrupoDragon from '../assets/images/Grupo Dragon_ Logo Negro.png';
 import styles from './sliderEmpresas.module.css';
-
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function SliderEmpresas() {
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
@@ -25,57 +20,56 @@ export default function SliderEmpresas() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const isDesktop = windowWidth >= 1024;
+  const logos = [
+    { src: Novomet, alt: "Novomet" },
+    { src: Pecom, alt: "Pecom" },
+    { src: EnergiaDelSur, alt: "Energia del Sur" },
+    { src: Crane, alt: "Crane" },
+    { src: Ulterra, alt: "Ulterra" },
+    { src: GrupoDragon, alt: "Grupo Dragon" },
+    { src: Geovial, alt: "Geovial" }
+  ];
+
+  const getSlidesPerView = () => {
+    if (windowWidth >= 1024) return 5;
+    if (windowWidth >= 768) return 4;
+    if (windowWidth >= 640) return 3;
+    return 1;
+  };
+
+  const slidesPerView = getSlidesPerView();
   
   return (
-    <>
-      <Swiper
-        key={isDesktop ? "desktop" : "mobile"}
-        slidesPerView={1}
-        spaceBetween={10}
-        centeredSlides={false}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
+    <div className={styles.sliderContainer}>
+      <div 
+        className={styles.sliderTrack}
+        style={{
+          '--slides-per-view': slidesPerView,
+          '--total-slides': logos.length * 2,
         }}
-        pagination={{
-          clickable: true,
-          type: "progressbar",
-        }}
-        navigation={false}
-        modules={[Autoplay, Pagination, Navigation]}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 25,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        }}
-        className={styles.mySwiper}
       >
-        <SwiperSlide className={styles.swiperSlide}>
-          <img className={styles.logoEmpresa} src={EnergiaDelSur} alt="Energía del Sur" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>
-          <img className={styles.logoEmpresa} src={Novomet} alt="Novomet" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>
-          <img className={styles.logoEmpresa} src={Crane} alt="Crane" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperSlide}>
-          <img className={styles.logoEmpresa} src={Ulterra} alt="Ulterra" />
-        </SwiperSlide>
-         <SwiperSlide className={styles.swiperSlide}>
-          <img className={styles.logoEmpresa} src={Pecom} alt="Pecom" />
-        </SwiperSlide>
-      </Swiper>
-    </>
+        {/* Primera set de logos */}
+        {logos.map((logo, index) => (
+          <div key={`first-${index}`} className={styles.slideItem}>
+            <img 
+              className={styles.logoEmpresa} 
+              src={logo.src} 
+              alt={logo.alt} 
+            />
+          </div>
+        ))}
+        
+        {/* Segunda set de logos para loop infinito */}
+        {logos.map((logo, index) => (
+          <div key={`second-${index}`} className={styles.slideItem}>
+            <img 
+              className={styles.logoEmpresa} 
+              src={logo.src} 
+              alt={logo.alt} 
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

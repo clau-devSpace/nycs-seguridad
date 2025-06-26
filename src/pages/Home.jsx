@@ -188,9 +188,10 @@ const SecurePro = () => {
         </div>
       </section>
 
-      <section>
-        <SliderEmpresas />
+      <section className='swiperSection'>
+       <SliderEmpresas />
       </section>
+      
 
       {/* Map Section */}
       <section className="map-section" id="contacto">
