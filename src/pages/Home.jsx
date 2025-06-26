@@ -4,10 +4,10 @@ import { ShieldCheck, Camera, Truck, Search, Grid2x2} from 'lucide-react';
 import './Home.css'; // Importar el archivo CSS
 import GoogleMapEmbed from '../components/mapa';
 import Slider from '../components/Slider';
-import Logo from '../assets/images/Logo-definitivo-nick.png';
 import WhatsApp from '../components/whatsapp';
 import WhatsAppBoton from '../components/whatsapp';
 import CtaSection from '../components/CTA';
+import SliderEmpresas from '../components/sliderEmpresas';
 
 const SecurePro = () => {
   const statsRef = useRef(null);
@@ -186,6 +186,10 @@ const SecurePro = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <SliderEmpresas />
       </section>
 
       {/* Map Section */}
