@@ -33,6 +33,11 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
+    background-image: url(
+        ../assets/images/fachada.jpeg
+    );
+    background-size: cover;
+    
 }
 
 .hero::before {
