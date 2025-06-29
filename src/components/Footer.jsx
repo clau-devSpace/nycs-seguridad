@@ -2,7 +2,7 @@ import React from "react";
 import './Footer.css';
 // Asegúrate de que el import sea exacto
 import { Instagram, Facebook } from "react-bootstrap-icons";
-import Logo from "../assets/images/Group 21.png";
+import Logo from "../assets/images/logotipo_nyc.png";
 
 export default function Footer() {
   return (

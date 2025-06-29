@@ -130,7 +130,7 @@ const SecurePro = () => {
           <div className="about-content">
             <div className="about-text">
               <h2>Nosotros</h2>
-              <p>Con más de 20 años de experiencia en el sector de la seguridad, somos una empresa líder que se dedica a brindar soluciones integrales de protección a empresas e industrias.</p>
+              <p>Con 23 años de experiencia en el sector de la seguridad, somos una empresa líder que se dedica a brindar soluciones integrales de protección a empresas e industrias.</p>
               <p>Nuestro equipo está formado por profesionales altamente capacitados y certificados, comprometidos con la excelencia en el servicio y la innovación constante en tecnologías de seguridad.</p>
               <div className="about-features">
                 <div className="feature-item">
@@ -153,6 +153,10 @@ const SecurePro = () => {
                   <span className="feature-icon">✓</span>
                   <span className="feature-text">Reducción de Costos</span>
                 </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span className="feature-text">Estudios de Seguridad</span>
+                </div>
               </div>
             </div>
             <div className="about-image">
@@ -169,11 +173,11 @@ const SecurePro = () => {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">20+</span>
+              <span className="stat-number">23</span>
               <span className="stat-label">Años de Experiencia</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">500+</span>
+              <span className="stat-number">+500</span>
               <span className="stat-label">Clientes Satisfechos</span>
             </div>
             <div className="stat-item">

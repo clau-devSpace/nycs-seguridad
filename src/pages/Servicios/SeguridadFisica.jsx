@@ -44,7 +44,7 @@ export default function SeguridadFisica(){
                         </div>
                         <div className="security-feature-item">
                             <span className="security-feature-icon">🔒</span>
-                            <span className="security-feature-text">Control de Acceso</span>
+                            <span className="security-feature-text">Controles de Accesos</span>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ export default function SeguridadFisica(){
                             <li>Vigilancia perimetral las 24 horas del día</li>
                             <li>Control de acceso vehicular y peatonal</li>
                             <li>Patrullajes internos programados y aleatorios</li>
-                            <li>Monitoreo de sistemas de alarmas comunitarias</li>
+                            <li>Monitoreo de sistemas de alarmas</li>
                         </ul>
                         
                         <p className="service-additional">Nuestro equipo especializado en seguridad residencial cuenta con protocolos específicos para entornos familiares, garantizando discreción y eficiencia en cada intervención. Trabajamos en coordinación con las administraciones de los barrios para mantener los más altos estándares de seguridad.</p>

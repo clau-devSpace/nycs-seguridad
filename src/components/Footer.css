@@ -1,6 +1,6 @@
 /* Footer */
 .footer {
-    background: #9e9d9d;
+     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     color: white;
     padding: 1.5rem 0 0.5rem; /* Reducido el padding superior */
     text-align: center;
@@ -10,8 +10,8 @@
 
 .social-icon{
     color: #000000;
-    font-size: 35px;
-    margin-right: 10px;
+    font-size: 28px;
+    margin-right: 20px;
 }
 
 .flex-items{
@@ -54,6 +54,7 @@
     margin: 0; /* Elimina márgenes por defecto */
     color: #000000;
     font-size: 0.9rem; /* Texto más pequeño */
+    font-weight: 700;
 }
 
 .footer p {
