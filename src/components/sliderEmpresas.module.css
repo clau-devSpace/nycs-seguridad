@@ -2,7 +2,7 @@
 .mySwiper {
   width: calc(100% - 20px);
   margin-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 .swiperSlide {
@@ -12,6 +12,14 @@
   height: 150px;
   width: 200px;
   overflow: hidden;
+}
+
+.sliderTittle{
+  font-size: 2.5rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 4rem;
 }
 
 /* === NUEVOS ESTILOS PARA SLIDER CSS CONTINUO === */
@@ -41,13 +49,18 @@
 /* === ESTILOS COMPARTIDOS PARA LOGOS === */
 .logoEmpresa {
   max-height: 150px;
-  max-width: 200px;
+  max-width: 180px;
   height: auto;
   width: auto;
   object-fit: contain;
   object-position: center;
   display: block;
   transition: transform 0.3s ease;
+}
+
+.logoEmpresa.logoEspecial{
+  max-height: 250px;
+  max-width: 300px;
 }
 
 .slideItem:hover .logoEmpresa {

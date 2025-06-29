@@ -414,13 +414,16 @@ body {
 /* Map Section */
 .map-section {
     padding: 4rem 0;
-    background: #f8f9fa;
     width: 100%;
     overflow: hidden;
 }
 
 .map-section .section-title{
     margin-bottom: 1rem;
+}
+
+.section-title h2{
+    color: white;
 }
 
 .map-container {

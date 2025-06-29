@@ -4,7 +4,6 @@ import { ShieldCheck, Camera, Truck, Search, Grid2x2} from 'lucide-react';
 import './Home.css'; // Importar el archivo CSS
 import GoogleMapEmbed from '../components/mapa';
 import Slider from '../components/Slider';
-import WhatsApp from '../components/whatsapp';
 import WhatsAppBoton from '../components/whatsapp';
 import CtaSection from '../components/CTA';
 import SliderEmpresas from '../components/sliderEmpresas';
@@ -206,9 +205,6 @@ const SecurePro = () => {
             <div className="map-placeholder">
               <GoogleMapEmbed />
             </div>
-        </div>
-        <div>
-          <img className="boton-whatsapp" src='../assets/images/whatsapp.png'/>
         </div>
       </section>
 

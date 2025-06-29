@@ -40,6 +40,8 @@ export default function SliderEmpresas() {
   const slidesPerView = getSlidesPerView();
   
   return (
+    <>
+      <h2 className={styles.sliderTittle}>Empresas que nos eligen</h2>
     <div className={styles.sliderContainer}>
       <div 
         className={styles.sliderTrack}
@@ -52,7 +54,7 @@ export default function SliderEmpresas() {
         {logos.map((logo, index) => (
           <div key={`first-${index}`} className={styles.slideItem}>
             <img 
-              className={styles.logoEmpresa} 
+              className={`${styles.logoEmpresa} ${index === 2 ? styles.logoEspecial : ''}`}
               src={logo.src} 
               alt={logo.alt} 
             />
@@ -63,7 +65,7 @@ export default function SliderEmpresas() {
         {logos.map((logo, index) => (
           <div key={`second-${index}`} className={styles.slideItem}>
             <img 
-              className={styles.logoEmpresa} 
+              className={`${styles.logoEmpresa} ${index === 2 ? styles.logoEspecial : ''}`}
               src={logo.src} 
               alt={logo.alt} 
             />
@@ -71,5 +73,6 @@ export default function SliderEmpresas() {
         ))}
       </div>
     </div>
+    </>
   );
 }
