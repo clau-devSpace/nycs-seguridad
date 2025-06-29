@@ -37,32 +37,42 @@ const SecurePro = () => {
   }, [statsAnimated]);
 
   const animateStats = () => {
-    const statNumbers = document.querySelectorAll('.stat-number');
-    statNumbers.forEach((stat) => {
-      const finalValue = stat.textContent;
-      if (finalValue.includes('+')) {
-        const numValue = parseInt(finalValue.replace('+', ''));
-        animateValue(stat, 0, numValue, 2000, '+');
-      } else if (finalValue.includes('%')) {
-        const numValue = parseInt(finalValue.replace('%', ''));
-        animateValue(stat, 0, numValue, 2000, '%');
-      }
-    });
-  };
+  const statNumbers = document.querySelectorAll('.stat-number');
+  statNumbers.forEach((stat) => {
+    const finalValue = stat.textContent;
+    if (finalValue.includes('+')) {
+      const numValue = parseInt(finalValue.replace('+', ''));
+      animateValue(stat, 0, numValue, 2000, '+', true); // prefix = true
+    } else if (finalValue.includes('%')) {
+      const numValue = parseInt(finalValue.replace('%', ''));
+      animateValue(stat, 0, numValue, 2000, '%', false); // suffix
+    } else {
+      // Para casos como "24/7" que no necesitan animación numérica
+      return;
+    }
+  });
+};
 
-  const animateValue = (element, start, end, duration, suffix = '') => {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      const currentValue = Math.floor(progress * (end - start) + start);
-      element.textContent = currentValue + suffix;
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
+const animateValue = (element, start, end, duration, symbol = '', isPrefix = false) => {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    const currentValue = Math.floor(progress * (end - start) + start);
+    
+    // Aplicar el símbolo como prefijo o sufijo según corresponda
+    if (isPrefix) {
+      element.textContent = symbol + currentValue;
+    } else {
+      element.textContent = currentValue + symbol;
+    }
+    
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
   };
+  window.requestAnimationFrame(step);
+};
 
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
@@ -199,8 +209,8 @@ const SecurePro = () => {
       {/* Map Section */}
       <section className="map-section" id="contacto">
         <div className="map-container">
-          <div className="section-title">
-            <h2>Nuestra Ubicación</h2>
+          <div className="section-tittle">
+            <h2 className='section-tittle-h2'>Nuestra Ubicación</h2>
           </div>
             <div className="map-placeholder">
               <GoogleMapEmbed />

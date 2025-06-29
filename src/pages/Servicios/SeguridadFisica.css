@@ -128,7 +128,7 @@
 /* Imagen simple y elegante */
 .service-image {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease;
@@ -144,7 +144,7 @@
 }
 
 .service-content h3 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: #fff;
     margin-bottom: 2rem;
     font-weight: 600;
@@ -155,7 +155,7 @@
 .service-description {
     font-size: 1.1rem;
     color: #999;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     line-height: 1.7;
     font-style: italic;
 }
