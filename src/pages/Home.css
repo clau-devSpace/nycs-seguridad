@@ -289,12 +289,15 @@ body {
 
 .stat-number {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 800;
     color: #ff6b35;
     margin-bottom: 0.5rem;
     display: block;
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ffaa5a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
-
 .stat-label {
     font-size: 1.1rem;
     color: #ccc;
@@ -416,6 +419,10 @@ body {
     overflow: hidden;
 }
 
+.map-section .section-title{
+    margin-bottom: 1rem;
+}
+
 .map-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -426,7 +433,7 @@ body {
 .map-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    gap: 1.5rem;
     align-items: start;
     width: 100%;
 }
