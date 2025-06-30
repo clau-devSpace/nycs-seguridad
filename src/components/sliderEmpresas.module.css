@@ -132,6 +132,7 @@
 
   .slideItem {
     padding: 18px;
+    margin-bottom: 2rem;
   }
 }
 
@@ -161,6 +162,17 @@
   .sliderTrack {
     animation-duration: 12s; /* Aún más rápido */
   }
+
+  .logoEmpresa {
+  max-height: 120px;
+  max-width: 160px;
+}
+
+.logoEmpresa.logoEspecial{
+  max-height: 250px;
+  max-width: 300px;
+}
+
 }
 
 @media (max-width: 360px) {

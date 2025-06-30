@@ -128,7 +128,7 @@ body {
     margin-bottom: 4rem;
 }
 
-.section-title h2 {
+.nuestros-servicios {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
@@ -521,6 +521,8 @@ body {
 
 /* Media Queries Responsive */
 
+/* Media Queries Responsive */
+
 /* Tablet Grande - 1000px */
 @media (max-width: 1000px) {
     .container {
@@ -607,7 +609,11 @@ body {
     }
     
     .services {
-        padding: 4rem 0;
+        padding: 3rem 0; /* Reducido de 4rem */
+    }
+    
+    .section-title {
+        margin-bottom: 2.5rem; /* Reducido de 4rem */
     }
     
     .services-grid {
@@ -624,7 +630,7 @@ body {
     }
     
     .about {
-        padding: 4rem 0;
+        padding: 3rem 0; /* Reducido de 4rem */
     }
     
     .about-content {
@@ -649,7 +655,7 @@ body {
     }
     
     .stats {
-        padding: 3rem 0;
+        padding: 2.5rem 0; /* Reducido de 3rem */
     }
     
     .stats-grid {
@@ -662,7 +668,7 @@ body {
     }
     
     .map-section {
-        padding: 3rem 0;
+        padding: 2.5rem 0; /* Reducido de 3rem */
     }
     
     .map-content {
@@ -725,11 +731,11 @@ body {
     }
     
     .services {
-        padding: 3rem 0;
+        padding: 2rem 0; /* Reducido de 3rem */
     }
     
-    .section-tittle {
-        margin-bottom: 2.5rem;
+    .section-title {
+        margin-bottom: 1.8rem; /* Reducido de 2.5rem */
     }
     
     .section-tittle-h2, .nuestros-servicios {
@@ -737,7 +743,7 @@ body {
     }
     
     .service-card {
-        padding: 1.5rem;
+        padding: 1.3rem; /* Reducido de 1.5rem */
     }
     
     .service-icon {
@@ -757,7 +763,7 @@ body {
     }
     
     .about {
-        padding: 3rem 0;
+        padding: 2.5rem 0; /* Reducido de 3rem */
     }
     
     .about-text h2 {
@@ -768,6 +774,10 @@ body {
     .about-text p {
         font-size: 1rem;
         margin-bottom: 1.2rem;
+    }
+    
+    .stats {
+        padding: 2rem 0; /* Reducido de 2.5rem */
     }
     
     .stats-grid {
@@ -804,6 +814,10 @@ body {
         font-size: 0.9rem;
     }
     
+    .map-section {
+        padding: 2rem 0; /* Reducido */
+    }
+    
     .map-placeholder {
         height: 350px;
     }
@@ -823,7 +837,7 @@ body {
 }
 
 /* Mobile - 400px */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .container {
         padding: 0 0.75rem;
     }
@@ -857,11 +871,15 @@ body {
     }
     
     .services {
-        padding: 2.5rem 0;
+        padding: 2.5rem 0; /* Reducido de 2.5rem */
+    }
+    
+    .section-title {
+        margin-bottom: 1.5rem; /* Reducido */
     }
     
     .section-title-h2, .nuestros-servicios {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .section-tittle p {
@@ -869,7 +887,7 @@ body {
     }
     
     .service-card {
-        padding: 1.2rem;
+        padding: 1rem; /* Reducido de 1.2rem */
     }
     
     .service-icon {
@@ -891,7 +909,11 @@ body {
     }
     
     .about {
-        padding: 2.5rem 0;
+        padding: 2rem 0; /* Reducido de 2.5rem */
+    }
+    
+    .about-content {
+        gap: 1.5rem;
     }
     
     .about-text h2 {
@@ -916,7 +938,7 @@ body {
     }
     
     .stats {
-        padding: 2.5rem 0;
+        padding: 1.5rem 0; /* Reducido de 2.5rem */
     }
     
     .stats-grid {
@@ -933,11 +955,20 @@ body {
     }
     
     .map-section {
-        padding: 2.5rem 0;
+        padding: 1.5rem 0; /* Reducido de 2.5rem */
+    }
+
+    /*Segundo swiper*/
+    .swiperSection{
+       padding-top: 10px; /* Reducido de 13px */
+    }
+    
+    .map-section .section-tittle{
+        margin-bottom: 1.5rem; /* Reducido de 2.5rem */
     }
     
     .contact-info {
-        padding: 1.2rem;
+        padding: 1rem; /* Reducido de 1.2rem */
     }
     
     .contact-info h3 {
@@ -947,7 +978,7 @@ body {
     .contact-item {
         flex-direction: column;
         text-align: center;
-        padding: 1rem 0.5rem;
+        padding: 0.8rem 0.5rem; /* Reducido de 1rem */
     }
     
     .contact-icon {
@@ -970,11 +1001,11 @@ body {
     
     .homeSwiper.swiper {
         max-width: 260px;
-        height: 200px;
+        height: 300px;
     }
     
     .footer {
-        padding: 1.5rem 0 0.5rem;
+        padding: 1.2rem 0 0.5rem; /* Reducido de 1.5rem */
     }
     
     .footer h3 {

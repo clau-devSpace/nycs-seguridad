@@ -34,7 +34,7 @@ export default function SliderEmpresas() {
     if (windowWidth >= 1024) return 5;
     if (windowWidth >= 768) return 4;
     if (windowWidth >= 640) return 3;
-    return 1;
+    return 2;
   };
 
   const slidesPerView = getSlidesPerView();
