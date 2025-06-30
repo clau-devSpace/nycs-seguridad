@@ -598,11 +598,11 @@ body {
         font-size: 1rem;
     }
     
-    .section-title-h2 {
+    .section-tittle-h2, .nuestros-servicios {
         font-size: 2rem;
     }
     
-    .section-title p {
+    .section-tittle p {
         font-size: 1rem;
     }
     
@@ -728,11 +728,11 @@ body {
         padding: 3rem 0;
     }
     
-    .section-title {
+    .section-tittle {
         margin-bottom: 2.5rem;
     }
     
-    .section-title-h2 {
+    .section-tittle-h2, .nuestros-servicios {
         font-size: 1.8rem;
     }
     
@@ -860,11 +860,11 @@ body {
         padding: 2.5rem 0;
     }
     
-    .section-title-h2 {
-        font-size: 1.6rem;
+    .section-title-h2, .nuestros-servicios {
+        font-size: 1.8rem;
     }
     
-    .section-title p {
+    .section-tittle p {
         font-size: 0.9rem;
     }
     
@@ -895,7 +895,7 @@ body {
     }
     
     .about-text h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     
     .about-text p {
