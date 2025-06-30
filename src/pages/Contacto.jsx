@@ -16,7 +16,7 @@ export default function Contacto() {
       <WhatsAppBoton />
       <Header 
         title="Contacto"
-        description="Ponete en contacto con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas"
+        description="Contáctate con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas."
         backgroundImage={ImagenContacto}
       />
 
@@ -43,8 +43,6 @@ export default function Contacto() {
                     title: "Teléfonos",
                     content: (
                       <p>
-                        <a href="tel:+541143216543">Aca telefono nuevo</a> / 
-                        <a href="tel:+541143216544"> </a><br />
                         <a href="tel:+541143219999">4467937</a>
                       </p>
                     ),
@@ -54,7 +52,7 @@ export default function Contacto() {
                     title: "Email",
                     content: (
                       <p>
-                        <a href="mailto:info@securepro.com.ar">info@nycseguridad.com.ar</a>
+                        <a href="mailto:info@nycseguridad.com.ar">info@nycseguridad.com.ar</a>
                       </p>
                     ),
                     icon: <Mail />

@@ -187,9 +187,9 @@ export default function Form() {
             >
               <option value="">Seleccione un servicio</option>
               <option value="seguridad-fisica">Seguridad Física</option>
-              <option value="monitoreo-alarmas">Seguridad Electrónica</option>
-              <option value="seguridad-electronica">Investigación</option>
-              <option value="seguridad-corporativa">Otros</option>
+              <option value="seguridad-electrónica">Seguridad Electrónica</option>
+              <option value="investigaciones">Investigaciones</option>
+              <option value="otros">Otros</option>
             </select>
           </div>
         </div>
