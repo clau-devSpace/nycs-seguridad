@@ -100,6 +100,7 @@
     color: #ccc;
     max-width: 600px;
     margin: 0 auto;
+    line-height: 1.3;
 }
 
 /* Diseño limpio y fluido */
@@ -236,6 +237,73 @@
     }
 }
 
+@media (max-width: 640px) {
+    .security-container {
+        padding: 0 1rem;
+    }
+    
+    .security-service-overview {
+        padding: 3rem 0;
+    }
+    
+    .security-services-section {
+        padding: 3rem 0 6rem 0;
+    }
+    
+    .security-overview-text h2 {
+        font-size: 2.2rem;
+    }
+    
+    .security-overview-text p {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .security-section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .security-section-title p {
+        font-size: 1.1rem;
+    }
+    
+    .service-content h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-description {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .service-features li {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .service-additional {
+        font-size: 0.95rem;
+    }
+    
+    .service-image {
+        height: 280px;
+    }
+    
+    .imagen-personal {
+        height: 350px;
+    }
+    
+    .security-services-clean {
+        gap: 4rem;
+    }
+    
+    .security-section-title {
+        margin-bottom: 3rem;
+    }
+}
+
+
 @media (max-width: 480px) {
     .security-overview-text h2 {
         font-size: 2rem;
@@ -252,6 +320,21 @@
     .imagen-personal {
         height: 300px;
     }
+
+    
+.security-section-title {
+    margin-bottom: 2rem;
+}
+
+.security-section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.security-section-title p {
+    font-size: 1.2rem;
+}
 }
 
 /* Ocultar el grid original */
