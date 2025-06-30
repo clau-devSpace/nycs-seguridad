@@ -37,7 +37,7 @@
 }
 
 .logo-footer {
-    width: 180px; /* Reducido el tamaño */
+    width: 175px; /* Reducido el tamaño */
     height: auto;
     object-fit: contain; /* Mantiene la proporción sin deformación */
     flex-shrink: 0; /* Evita que se comprima */
@@ -92,7 +92,7 @@
     }
     
     .logo-footer {
-        width: 130px; /* Tamaño ajustado para tablet */
+        width: 150px; /* Tamaño ajustado para tablet */
     }
     
     .social-icon {
@@ -107,7 +107,7 @@
     }
     
     .logo-footer {
-        width: 120px; /* Tamaño ajustado para móvil */
+        width: 135px; /* Tamaño ajustado para móvil */
     }
     
     .redes-sociales p {
@@ -134,7 +134,7 @@
     }
     
     .logo-footer {
-        width: 100px; /* Tamaño más pequeño para móviles */
+        width: 135px; /* Tamaño más pequeño para móviles */
     }
     
     .social-icon {

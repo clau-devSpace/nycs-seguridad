@@ -87,6 +87,10 @@
     height: 280px;
   }
 
+  .sliderTittle{
+  font-size: 2rem;
+}
+
   .swiperSlide {
     padding: 20px;
   }
@@ -117,6 +121,10 @@
     padding: 18px;
   }
 
+  .sliderTittle{
+  font-size: 1.8rem;
+}
+
   .sliderContainer {
     width: 95% !important;
     height: 250px;
@@ -136,6 +144,10 @@
   .swiperSlide {
     padding: 15px;
   }
+
+  .sliderTittle{
+  font-size: 1.6rem;
+}
 
   .sliderContainer {
     width: 95% !important;
@@ -159,6 +171,10 @@
 
   .swiperSlide {
     padding: 10px;
+  }
+ 
+  .sliderTittle{
+  font-size: 1.6rem;
   }
 
   .sliderContainer {
