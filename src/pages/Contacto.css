@@ -252,7 +252,7 @@
 
 .contact-map-section {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
 }
 
 .contact-section-title {
@@ -262,7 +262,7 @@
 
 .contact-section-title h2 {
     font-size: 2.3rem;
-    color: #1a1a1a;
+    color: white;
     margin-bottom: 0.8rem;
 }
 

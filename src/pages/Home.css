@@ -50,15 +50,6 @@ body {
     
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.35); /* Overlay para mejorar legibilidad */
-}
 
 
 .hero-content {
@@ -72,7 +63,7 @@ body {
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #fff;
+    color: white;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     word-wrap: break-word;
@@ -88,7 +79,7 @@ body {
 
 .hero p {
     font-size: 1.1rem;
-    color: #ccc;
+    color: white;
     margin-bottom: 3rem;
     line-height: 1.8;
     word-wrap: break-word;
