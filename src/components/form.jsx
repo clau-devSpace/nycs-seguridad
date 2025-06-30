@@ -38,7 +38,7 @@ export default function Form() {
     e.preventDefault();
     
     // Validar configuración
-    if (EMAIL_CONFIG.USER_ID === 'TU_USER_ID') {
+    if (EMAIL_CONFIG.USER_ID === 'RkfmtJuFyfOOM7cUf') {
       setSubmitMessage('⚠️ Error: Debes configurar las credenciales de EmailJS');
       setSubmitType('error');
       return;
