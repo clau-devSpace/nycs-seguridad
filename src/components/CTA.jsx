@@ -15,7 +15,7 @@ const CtaSection = () => {
         </h2>
         
         <p className="cta-description">
-          Con más de 20 años de experiencia, ofrecemos soluciones de seguridad 
+          Con más de 23 años de experiencia, ofrecemos soluciones de seguridad 
           personalizadas para empresas e industrias. Contáctanos para una consulta 
           gratuita.
         </p>

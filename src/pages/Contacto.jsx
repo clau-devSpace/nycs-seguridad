@@ -14,7 +14,7 @@ export default function Contacto() {
   return (
     <>
       <WhatsAppBoton />
-      <Header 
+      <Header
         title="Contacto"
         description="Contáctate con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas."
         backgroundImage={ImagenContacto}
@@ -33,40 +33,38 @@ export default function Contacto() {
                     title: "Oficina Central",
                     content: (
                       <p>
-                        España 1055<br />
+                        España 1055
+                        <br />
                         U9000 - Comodoro Rivadavia, Chubut
                       </p>
                     ),
-                    icon: <MapPin />
+                    icon: <MapPin />,
                   },
                   {
                     title: "Teléfonos",
                     content: (
-                      <p>
-                        <a href="tel:+541143219999">4467937</a>
-                      </p>
+                      <>
+                        <p>
+                          <a href="tel:4467937">4467937</a>
+                        </p>
+                        <p>
+                          <a href="tel:2974438169">2974438169</a>
+                        </p>
+                      </>
                     ),
-                    icon: <PhoneCall />
+                    icon: <PhoneCall />,
                   },
                   {
                     title: "Email",
                     content: (
                       <p>
-                        <a href="mailto:info@nycseguridad.com.ar">info@nycseguridad.com.ar</a>
+                        <a href="mailto:info@nycseguridad.com.ar">
+                          info@nycseguridad.com.ar
+                        </a>
                       </p>
                     ),
-                    icon: <Mail />
+                    icon: <Mail />,
                   },
-                  {
-                    title: "Horarios de Atención",
-                    content: (
-                      <p>
-                        <strong>Lun-Vie:</strong> 8:00 - 18:00 hs<br />
-                        <strong>Sáb:</strong> 9:00 - 13:00 hs
-                      </p>
-                    ),
-                    icon: <Clock />
-                  }
                 ].map(({ title, content, icon }, index) => (
                   <div className="contact-info-item" key={index}>
                     <div className="contact-info-icon" aria-hidden="true">

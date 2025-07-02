@@ -182,7 +182,7 @@ const animateValue = (element, start, end, duration, symbol = '', isPrefix = fal
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">23</span>
+              <span className="stat-number">+23</span>
               <span className="stat-label">Años de Experiencia</span>
             </div>
             <div className="stat-item">

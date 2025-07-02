@@ -17,21 +17,21 @@ export default function WhatsAppBoton(){
         cursor: 'pointer'
     };
 
-    const estilos3 = {
-        fontSize: '14px',
-        color: 'white',
-        backgroundColor: '#ff6b35',
-        padding: '5px 10px',
-        borderRadius: '100px',
-        marginBottom: '10px'
-    };
+    const phoneNumber = "2974438169";
+    const message = "Hola. Me interesa obtener más información, por favor.";
 
-    return(
-        <>
-        <div style={estilos1}>
-           {/*<p style={estilos3}>Estamos aquí para ayudarte</p> */} 
-           <Whatsapp style={estilos2} />
-        </div>
-        </>
+    return (
+      <>
+        <a
+          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+            message
+          )}`}
+          style={estilos1}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Whatsapp style={estilos2} />
+        </a>
+      </>
     );
 }
