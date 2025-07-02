@@ -21,7 +21,7 @@ const CtaSection = () => {
         </p>
 
         <a 
-          href="https://wa.me/5491123456789" 
+          href="https://wa.me/2974438169" 
           target="_blank" 
           rel="noopener noreferrer"
           className="cta-button"

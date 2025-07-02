@@ -73,14 +73,14 @@ body {
     font-size: 1.3rem;
     color: #ff6b35;
     margin-bottom: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     word-wrap: break-word;
 }
 
 .hero p {
     font-size: 1.1rem;
     color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     line-height: 1.8;
     word-wrap: break-word;
 }

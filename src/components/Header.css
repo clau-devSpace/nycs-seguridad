@@ -31,6 +31,7 @@
     padding: 0 1rem;
     position: relative;
     z-index: 2; /* Asegurar que el contenido esté por encima del background */
+     animation: fadeInUp 1s ease-out;
 }
 
 /* Solución para dos imágenes como elementos separados */
@@ -112,7 +113,7 @@
 }
 
 .page-header-section h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #1a1a1a;
     margin-top: 2rem;
@@ -120,7 +121,8 @@
 }
 
 .page-header-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+   
     color: #ff6b35;
     margin-bottom: 1rem;
     font-weight: 300;
@@ -130,6 +132,19 @@
     font-size: 1.1rem;
     color: #666;
     line-height: 1.8;
+     max-width: 600px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive */

@@ -6,6 +6,7 @@ import Crane from '../assets/images/logo-crane.svg';
 import Ulterra from '../assets/images/Ulterra-logo.jpeg';
 import Geovial from '../assets/images/geovial.jpg';
 import GrupoDragon from '../assets/images/Grupo Dragon_ Logo Negro.png';
+import Supercanal from '../assets/images/Web-super-imagen-logo-910x144px.png'
 import styles from './sliderEmpresas.module.css';
 
 export default function SliderEmpresas() {
@@ -24,6 +25,7 @@ export default function SliderEmpresas() {
     { src: Novomet, alt: "Novomet" },
     { src: Pecom, alt: "Pecom" },
     { src: EnergiaDelSur, alt: "Energia del Sur" },
+    { src: Supercanal, alt: "Supercanal S.A" },
     { src: Crane, alt: "Crane" },
     { src: Ulterra, alt: "Ulterra" },
     { src: GrupoDragon, alt: "Grupo Dragon" },

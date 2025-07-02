@@ -105,7 +105,7 @@ const animateValue = (element, start, end, duration, symbol = '', isPrefix = fal
         <div className="container">
           <div className="section-title">
             <h2 className='nuestros-servicios'>Nuestros Servicios</h2>
-            <p>Soluciones integrales de seguridad adaptadas a sus necesidades específicas</p>
+            {/*<p>Soluciones integrales de seguridad adaptadas a sus necesidades específicas</p>*/}
           </div>
           <div className="services-grid">
             <div className="service-card">
