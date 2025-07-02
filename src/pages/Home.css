@@ -839,13 +839,17 @@ body {
 /* Mobile - 400px */
 @media (max-width: 480px) {
     .container {
-        padding: 0 0.75rem;
-    }
+            padding: 0 0.75rem;
+        }
     
-    .hero {
-        padding: 0 0.75rem;
-    }
+        .hero {
+            padding: 0 0.75rem;
+            background-image: url(../assets/images/imagen-celular.jpg
+    );
+            background-size: 100% 100%;
+            background-position:20% center;
     
+        }
     .hero-content {
         padding: 0 0.25rem;
     }
