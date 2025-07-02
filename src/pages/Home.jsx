@@ -92,7 +92,7 @@ const animateValue = (element, start, end, duration, symbol = '', isPrefix = fal
       <section className="hero" id="inicio">
         <div className="hero-content">
           <h1>Seguridad Integral</h1>
-          <p className="hero-subtitle">Protección Profesional 24/7</p>
+         {/*  <p className="hero-subtitle">Protección Profesional 24/7</p>*/}
           <p>Brindamos servicios de seguridad privada con los más altos estándares de calidad y profesionalismo.</p>
           <a href="#servicios" className="cta-boton" onClick={(e) => handleSmoothScroll(e, '#servicios')}>
             Conocer Servicios
