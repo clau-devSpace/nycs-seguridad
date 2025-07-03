@@ -7,6 +7,7 @@ import Slider from '../components/Slider';
 import WhatsAppBoton from '../components/whatsapp';
 import CtaSection from '../components/CTA';
 import SliderEmpresas from '../components/sliderEmpresas';
+import ImagenFondoNYC from '../assets/images/edicion1.jpg';
 
 const SecurePro = () => {
   const statsRef = useRef(null);
@@ -89,11 +90,13 @@ const animateValue = (element, start, end, duration, symbol = '', isPrefix = fal
     <div>
       {/* Hero Section */}
       <WhatsAppBoton />
-      <section className="hero" id="inicio">
+      <section className="hero" id="inicio" style={{
+         backgroundImage: `url(${ImagenFondoNYC})`
+      }}>
         <div className="hero-content">
           <h1>Seguridad Integral</h1>
          {/*  <p className="hero-subtitle">Protección Profesional 24/7</p>*/}
-          <p>Brindamos servicios de seguridad privada con los más altos estándares de calidad y profesionalismo.</p>
+          <p>En NYC Brindamos servicios de seguridad privada con los más altos estándares de calidad y profesionalismo.</p>
           <a href="#servicios" className="cta-boton" onClick={(e) => handleSmoothScroll(e, '#servicios')}>
             Conocer Servicios
           </a>

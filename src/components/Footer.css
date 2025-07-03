@@ -116,7 +116,7 @@
 }
 
 /* Mobile - 400px */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .footer {
         padding: 1rem 0 0.5rem; /* Más compacto en móvil */
     }
@@ -134,7 +134,7 @@
     }
     
     .logo-footer {
-        width: 135px; /* Tamaño más pequeño para móviles */
+        width: 150px; /* Tamaño más pequeño para móviles */
     }
     
     .social-icon {
