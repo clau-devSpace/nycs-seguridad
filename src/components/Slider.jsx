@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Imagen1 from '../assets/images/imagen-oficina.jpeg';
-import Imagen2 from '../assets/images/image-slider-2.jpg';
+import Imagen1 from '../assets/images/fachada.png';
+import Imagen2 from '../assets/images/guardias.jpg';
 import Imagen4 from '../assets/images/image-slider-4.jpeg';
 import Imagen5 from '../assets/images/image-slider-6.jpeg';
 

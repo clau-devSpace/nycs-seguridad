@@ -78,7 +78,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.3rem;
-    color: #ff6b35;
+    color: #ff8435;
     margin-bottom: 2rem;
     font-weight: 500;
     word-wrap: break-word;
@@ -112,12 +112,12 @@ body {
 .cta-boton:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
-    background: linear-gradient(135deg, #ff8c42, #ff6b35);
+    background: linear-gradient(135deg, #ff8c42, #ff8435);
 }
 
 /* Services Section */
 .services {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: linear-gradient(135deg, #dee2e6 0%, #ced4da 100%);
     width: 100%;
     overflow: hidden;
@@ -214,13 +214,13 @@ body {
 }
 
 .service-card:hover h3 {
-    color: #ff6b35;
+    color: #ff8435;
 }
 
 .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #ff6b35, #ff8c42);
+    background: linear-gradient(135deg, #ff8435, #ff8c42);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -323,13 +323,13 @@ body {
 
 .about-text h2 {
     font-size: 2.5rem;
-    color: #ff6b35;
+    color: #ff8435;
     margin-bottom: 1.5rem;
     word-wrap: break-word;
 }
 
 .about-text p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     color: #ccc;
     margin-bottom: 1.5rem;
@@ -352,7 +352,7 @@ body {
 
 .feature-icon {
     font-size: 1.5rem;
-    color: #ff6b35;
+    color: #ff8435;
     flex-shrink: 0;
 }
 
@@ -477,7 +477,7 @@ body {
 
 .contact-icon {
     font-size: 1.5rem;
-    color: #ff6b35;
+    color: #ff8435;
     width: 40px;
     text-align: center;
     flex-shrink: 0;
@@ -642,8 +642,15 @@ body {
     }
     
     .about {
-        padding: 3rem 0; /* Reducido de 4rem */
+        padding: 2.5rem 0; /* Reducido de 4rem */
     }
+
+      
+    .about-text p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
     
     .about-content {
         grid-template-columns: 1fr;
@@ -791,8 +798,8 @@ body {
     }
     
     .about-text p {
-        font-size: 1rem;
-        margin-bottom: 1.2rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
     }
     
     .stats {
@@ -904,6 +911,7 @@ body {
     
     .section-title-h2, .nuestros-servicios {
         font-size: 1.6rem;
+        margin-top: 1rem;
     }
     
     .section-tittle p {
@@ -988,7 +996,7 @@ body {
     }
     
     .map-section .section-tittle{
-        margin-bottom: 1.5rem; /* Reducido de 2.5rem */
+        margin-bottom: 0.7rem; /* Reducido de 2.5rem */
     }
     
     .contact-info {
@@ -1024,7 +1032,7 @@ body {
     }
     
     .homeSwiper.swiper {
-        max-width: 260px;
+        max-width: 350px;
         height: 300px;
     }
     

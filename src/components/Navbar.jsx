@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Logo from '../assets/images/Group 6.png';
 import Logo2 from '../assets/images/Group 7.png'
 import Logo3 from '../assets/images/Group 21.png';
-import Logo4 from '../assets/images/logotipo_nyc.png';
+import Logo4 from '../assets/images/logotipo-colornuevo.png';
 import { useNavbar } from '../hooks/useNavbar';
 import './Navbar.css';
 
@@ -81,7 +81,7 @@ const Navbar = () => {
     <nav
       className="navbar"
       style={{
-        background: '#ff6b35 !important', // Color fijo naranja
+        background: '#ff8435 !important', // Color fijo naranja
         // resto de estilos...
       }}
     >

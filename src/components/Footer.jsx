@@ -2,7 +2,7 @@ import React from "react";
 import './Footer.css';
 // Asegúrate de que el import sea exacto
 import { Instagram, Facebook } from "react-bootstrap-icons";
-import Logo from "../assets/images/logotipo_nyc.png";
+import Logo from "../assets/images/logotipo-colornuevo.png";
 
 export default function Footer() {
   return (
@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 NYC. Todos los derechos reservados.</p>
+          <p>&copy; 2025 NYC S.R.L Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
