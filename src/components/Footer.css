@@ -118,7 +118,7 @@
 /* Mobile - 400px */
 @media (max-width: 480px) {
     .footer {
-        padding: 1rem 0 0.5rem; /* Más compacto en móvil */
+        padding: 1rem 0 1rem; /* Más compacto en móvil */
     }
     
     .footer h3 {
@@ -130,7 +130,8 @@
     }
     
     .footer-content {
-        padding: 0 0.75rem;
+        padding: 0 1.5rem;
+        margin:  1.5rem 0;
     }
     
     .logo-footer {
@@ -143,6 +144,6 @@
     }
     
     .flex-items {
-        gap: 0.75rem; /* Espaciado más compacto */
+        gap: 1.5rem; /* Espaciado más compacto */
     }
 }

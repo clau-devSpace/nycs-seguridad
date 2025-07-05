@@ -88,6 +88,7 @@ export default function Contacto() {
         <div className="contact-main-container">
           <div className="contact-section-title">
             <h2>Nuestra Ubicación</h2>
+            <h3 className='direccion'>España 1055, Comodoro Rivadavia, Chubut.</h3>
           </div>
           <div className="contact-map-container">
             <div className="contact-map-placeholder">

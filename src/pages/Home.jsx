@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Camera, Truck, Search, Grid2x2} from 'lucide-react';
+import { ShieldCheck, Camera, Locate, Truck, Search, Grid2x2} from 'lucide-react';
 import './Home.css'; // Importar el archivo CSS
 import GoogleMapEmbed from '../components/mapa';
 import Slider from '../components/Slider';
@@ -214,6 +214,7 @@ const animateValue = (element, start, end, duration, symbol = '', isPrefix = fal
         <div className="map-container">
           <div className="section-tittle">
             <h2 className='section-tittle-h2'>Nuestra Ubicación</h2>
+             <h3 className='direccion'><Locate className='locate'/>España 1055, Comodoro Rivadavia, Chubut.</h3>
           </div>
             <div className="map-placeholder">
               <GoogleMapEmbed />

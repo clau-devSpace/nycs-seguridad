@@ -428,6 +428,22 @@ body {
     text-align: center;
 }
 
+.direccion{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 1.5rem;
+    color: #ff8435;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.locate{
+    vertical-align: middle;
+    padding-right: 5px;
+    color: white;
+}
+
 .map-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -873,7 +889,7 @@ body {
             background-image: url(../assets/images/imagen-celular.jpg
     );
             background-size: cover;
-            background-position: 10% center;
+            background-position: 5% center;
     
         }
     .hero-content {
@@ -988,6 +1004,11 @@ body {
     
     .map-section {
         padding: 1.5rem 0; /* Reducido de 2.5rem */
+    }
+
+    .direccion{
+        font-size: 1rem;
+        margin-top: 0.5rem;
     }
 
     /*Segundo swiper*/
