@@ -38,12 +38,12 @@ export default function Form() {
     e.preventDefault();
     
     // Validar configuración
-    if (EMAIL_CONFIG.USER_ID === 'RkfmtJuFyfOOM7cUf') {
+   {/* if (EMAIL_CONFIG.USER_ID === 'RkfmtJuFyfOOM7cUf') {
       setSubmitMessage('⚠️ Error: Debes configurar las credenciales de EmailJS');
       setSubmitType('error');
       return;
     }
-
+*/} 
     setIsSubmitting(true);
     setSubmitMessage('');
 
