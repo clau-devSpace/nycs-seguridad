@@ -44,14 +44,15 @@ export default function SeguridadElectronica(){
                             <span className="security-feature-icon">🌐</span>
                             <span className="security-feature-text">Acceso Online</span>
                         </div>
+                        <div className="security-feature-item specific-item">
+                            <span className="security-feature-icon">🤖</span>
+                            <span className="security-feature-text specific-text">Recorridas Programadas con Robots Autónomos</span>
+                        </div>
                           <div className="security-feature-item">
                             <span className="security-feature-icon"><img className="dron" src={Dron}/></span>
                             <span className="security-feature-text">Vigilancia Aérea con Drones</span>
                         </div>
-                          <div className="security-feature-item">
-                            <span className="security-feature-icon">🤖</span>
-                            <span className="security-feature-text">Recorridas Programadas con Robots Autónomos</span>
-                        </div>
+                         
                     </div>
                 </div>
             </div>

@@ -54,6 +54,13 @@
     padding: 0.5rem;
 }
 
+.security-feature-item.specific-item{
+     display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  align-items: start;
+}
+
 .security-feature-icon {
     font-size: 1.2rem;
 }
@@ -201,6 +208,7 @@
     height: auto;
     vertical-align: middle;
 }
+
 /* Responsive */
 @media (max-width: 768px) {
     .security-overview-content {
