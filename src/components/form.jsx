@@ -71,8 +71,7 @@ export default function Form() {
       );
 
       console.log('Email enviado exitosamente:', response);
-      
-      // Mostrar mensaje de éxito
+       // Mostrar mensaje de éxito
       setSubmitMessage('✅ ¡Consulta enviada correctamente! Te responderemos a la brevedad.');
       setSubmitType('success');
       
@@ -222,7 +221,10 @@ export default function Form() {
             'Enviar Consulta'
           )}
         </button>
+       
       </form>
     </div>
+
+    
   );
 }
