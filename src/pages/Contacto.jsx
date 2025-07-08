@@ -18,6 +18,7 @@ export default function Contacto() {
         title="Contacto"
         description="Contáctate con nosotros para recibir asesoramiento personalizado sobre nuestros servicios de seguridad. Nuestro equipo está disponible para responder todas tus consultas."
         backgroundImage={ImagenContacto}
+        className="estilos-imagen-contacto"
       />
 
       {/* Contact Section */}

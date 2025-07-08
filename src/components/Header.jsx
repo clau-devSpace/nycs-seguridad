@@ -6,22 +6,27 @@ function Header({
   description,
   backgroundImage1,
   backgroundImage2,
-  backgroundImage // Para usar una sola imagen
+  backgroundImage, // Para usar una sola imagen
+  className
 }) {
   // Determinar qué clase CSS usar
   const getSectionClass = () => {
+    let baseClass = 'page-header-section';
+    
     if (backgroundImage1 && backgroundImage2) {
-      return 'page-header-section with-double-bg';
+      baseClass += ' with-double-bg';
     }
-    return 'page-header-section';
+    
+    if (className) {
+      baseClass += ` ${className}`;
+    }
+    
+    return baseClass;
   };
 
-  // Estilo para una sola imagen
+  // Estilo SOLO para la imagen (sin backgroundSize, backgroundPosition, backgroundRepeat)
   const singleImageStyle = backgroundImage ? {
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${backgroundImage})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${backgroundImage})`
   } : {};
 
   // Determinar si usar estilos de texto blanco (cuando hay imagen de fondo)

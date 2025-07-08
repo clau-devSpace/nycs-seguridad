@@ -5,10 +5,15 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    min-height: 100vh; /* Asegurar altura mínima */
+    min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    /* Estilos base para imagen de fondo (movidos del componente) */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .page-header-section::before {
@@ -135,6 +140,27 @@
      max-width: 600px;
 }
 
+/* Clases específicas para diferentes páginas */
+.header-contacto {
+    background-size: cover;
+    background-position: center;
+}
+
+.header-inicio {
+    background-size: cover;
+    background-position: center top;
+}
+
+.header-servicios {
+    background-size: contain;
+    background-position: center;
+}
+
+.header-nosotros {
+    background-size: cover;
+    background-position: center;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -167,5 +193,34 @@
     
     .page-header-section h1 {
         font-size: 2.2rem;
+    }
+    
+    /* Media queries específicas para diferentes páginas */
+    .header-contacto {
+        background-position: 50% center;
+    }
+    
+    .header-inicio {
+        background-position: center bottom;
+    }
+    
+    .header-servicios {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header-contacto {
+        background-position: 50% center;
+        background-size: cover;
+    }
+    
+    .header-inicio {
+        background-position: center bottom;
     }
 }

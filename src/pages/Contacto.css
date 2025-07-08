@@ -30,6 +30,11 @@
     z-index: -1;
 }
 
+.estilos-imagen-contacto {
+    background-size: cover;
+    background-position: center;
+} 
+
 .contact-hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -383,7 +388,14 @@
         border-radius: 10px;
     }
     
-    .contact-map-placeholder {
-        min-height: 250px;
-    }
+     .contact-map-placeholder {
+         min-height: 250px;
+     }
+    
+    .estilos-imagen-contacto {
+         background-size: cover;
+         background-position: 5% center !important;
+     }
+
+    
 }
